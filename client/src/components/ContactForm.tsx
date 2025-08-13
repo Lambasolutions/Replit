@@ -148,7 +148,8 @@ export default function ContactForm() {
                   <FormControl>
                     <Input 
                       type="tel" 
-                      {...field} 
+                      {...field}
+                      value={field.value || ""}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
                     />
                   </FormControl>
@@ -163,7 +164,7 @@ export default function ContactForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Service Interest</FormLabel>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                  <Select onValueChange={field.onChange} defaultValue={field.value || ""}>
                     <FormControl>
                       <SelectTrigger className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300">
                         <SelectValue placeholder="Select a service..." />
