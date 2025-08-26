@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import Header from "@/components/Header";
+import MegaMenu from "@/components/MegaMenu";
 import Footer from "@/components/Footer";
 
 export default function Services() {
@@ -79,7 +79,7 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      <MegaMenu />
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white">

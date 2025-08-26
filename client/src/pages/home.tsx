@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Header from "@/components/Header";
+import MegaMenu from "@/components/MegaMenu";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
@@ -45,7 +45,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      <MegaMenu />
       
       {/* Hero Section */}
       <section id="home" className="relative bg-gradient-to-r from-primary to-secondary text-white">
