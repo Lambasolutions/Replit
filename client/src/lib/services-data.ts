@@ -434,9 +434,42 @@ export const allServices: Service[] = [
   // Company
   {
     slug: "company",
-    name: "Company",
+    name: "Our Company",
     category: "company",
     href: "/company",
-    icon: Home
+    icon: Home,
+    tagline: "Learn more about us"
+  },
+  {
+    slug: "about-us",
+    name: "About Us",
+    category: "company",
+    href: "/company/about",
+    parentSlug: "company",
+    description: "Our story and mission"
+  },
+  {
+    slug: "our-team",
+    name: "Our Team",
+    category: "company",
+    href: "/company/team",
+    parentSlug: "company",
+    description: "Meet our expert team"
+  },
+  {
+    slug: "careers",
+    name: "Careers",
+    category: "company",
+    href: "/company/careers",
+    parentSlug: "company",
+    description: "Join our growing team"
+  },
+  {
+    slug: "contact-us",
+    name: "Contact Us",
+    category: "company",
+    href: "/company/contact",
+    parentSlug: "company",
+    description: "Get in touch with us"
   }
 ];

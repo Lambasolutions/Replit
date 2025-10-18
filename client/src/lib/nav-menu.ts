@@ -20,6 +20,7 @@ const textilesSublinks = createSublinks('textiles');
 const taxComplianceSublinks = createSublinks('taxes-and-compliance');
 const loansSublinks = createSublinks('loans');
 const importServicesSublinks = createSublinks('import-services');
+const companySublinks = createSublinks('company');
 
 const citizenServicesSublinks = allServices
   .filter(s => ['digital-signature-certificate', 'csc-services', 'all-state-services'].includes(s.slug) && s.href)
@@ -34,6 +35,7 @@ const financialAndLegalServices = servicesByCategory['financial-and-legal'] || [
 const itAndBpoServices = servicesByCategory['it-and-bpo'] || [];
 const ecommerceServices = servicesByCategory['ecommerce'] || [];
 const importExportServices = servicesByCategory['import-and-export'] || [];
+const companyServices = servicesByCategory['company'] || [];
 
 export const navMenu: NavMenu[] = [
   { name: "Home", href: "/" },
@@ -174,7 +176,14 @@ export const navMenu: NavMenu[] = [
     ]
   },
   { 
-    name: "Company", 
-    href: "/company"
+    name: "Company",
+    columns: [
+      [{
+        name: "Our Company",
+        href: "/company",
+        icon: companyServices.find(s => s.slug === 'company')?.icon,
+        sublinks: companySublinks
+      }]
+    ]
   },
 ];
