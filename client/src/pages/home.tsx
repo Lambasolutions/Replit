@@ -60,11 +60,10 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Your Trusted Partner for<br />
-              <span className="text-accent">Complete Business Solutions</span>
+              <span className="text-accent">He upon whom all depends</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              From government services to premium products, Lambana Solutions provides comprehensive business support across multiple industries with excellence and trust.
+              Lambana Solutions is your trusted partner for complete business support across government services, premium products, and international trade.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
