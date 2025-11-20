@@ -70,11 +70,9 @@ export default function ContactForm() {
 
   const serviceOptions = [
     { value: "government", label: "Government & Citizen Services" },
-    { value: "company-registration", label: "Company Registration" },
     { value: "financial", label: "Financial & Accounting Services" },
     { value: "legal", label: "Legal Services" },
     { value: "it-bpo", label: "IT & BPO Solutions" },
-    { value: "ecommerce", label: "E-commerce Solutions" },
     { value: "food", label: "Foods & Agri-Products" },
     { value: "textiles", label: "Textiles" },
     { value: "import-export", label: "Import & Export" },
@@ -220,19 +218,9 @@ export default function ContactForm() {
               )}
             />
             
-            {/* reCAPTCHA Placeholder */}
-            <div className="flex items-center justify-center p-4 border-2 border-dashed border-gray-300 rounded-lg bg-gray-50">
-              <div className="text-center">
-                <i className="fas fa-shield-alt text-gray-400 text-2xl mb-2"></i>
-                <p className="text-gray-500 text-sm">reCAPTCHA verification will appear here</p>
-                <p className="text-xs text-gray-400">Security verification for form submission</p>
-              </div>
-            </div>
-            
             <Button 
               type="submit" 
               disabled={contactMutation.isPending}
-              data-testid="button-submit-contact"
               className="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition duration-300"
             >
               {contactMutation.isPending ? "Sending..." : "Send Message"} <i className="fas fa-paper-plane ml-2"></i>
