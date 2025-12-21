@@ -49,7 +49,7 @@ export default function Home() {
       
       {/* Hero Section - More Engaging */}
       <section id="home" className="relative bg-gradient-to-br from-blue-700 via-blue-600 to-blue-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-70"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
