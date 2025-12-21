@@ -29,12 +29,12 @@ export default function Header() {
   };
 
   const serviceCategories = [
-    { name: "Company Registration", href: "/services#company-registration" },
-    { name: "Digital Signature Certificate", href: "/services#dsc" },
-    { name: "CSC Services", href: "/services#csc" },
-    { name: "Financial Services", href: "/services#financial" },
-    { name: "Legal Services", href: "/services#legal" },
-    { name: "E-commerce Solutions", href: "/services#ecommerce" },
+    { name: "Company Registration", href: "/services/company-registration" },
+    { name: "Digital Signature Certificate", href: "/services/digital-signature-certificate" },
+    { name: "CSC Services", href: "/services/csc-services" },
+    { name: "Financial Services", href: "/services/financial-services" },
+    { name: "Legal Services", href: "/services/legal-services" },
+    { name: "E-commerce Solutions", href: "/services/ecommerce-solutions" },
   ];
 
   return (

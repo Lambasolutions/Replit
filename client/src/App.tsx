@@ -5,6 +5,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import Services from "@/pages/services";
+import CompanyRegistration from "@/pages/service-company-registration";
+import DSC from "@/pages/service-dsc";
+import CSC from "@/pages/service-csc";
+import Financial from "@/pages/service-financial";
+import Legal from "@/pages/service-legal";
+import Ecommerce from "@/pages/service-ecommerce";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -12,6 +18,12 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/services" component={Services} />
+      <Route path="/services/company-registration" component={CompanyRegistration} />
+      <Route path="/services/digital-signature-certificate" component={DSC} />
+      <Route path="/services/csc-services" component={CSC} />
+      <Route path="/services/financial-services" component={Financial} />
+      <Route path="/services/legal-services" component={Legal} />
+      <Route path="/services/ecommerce-solutions" component={Ecommerce} />
       <Route component={NotFound} />
     </Switch>
   );
