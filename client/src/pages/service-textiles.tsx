@@ -33,21 +33,36 @@ export default function Textiles() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="shadow-lg hover:shadow-xl transition duration-300">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.name}</h3>
-                  <p className="text-gray-600 mb-6">{service.description}</p>
-                  <Button 
-                    size="lg"
-                    className="w-full bg-orange-600 text-white hover:bg-orange-700"
-                    data-testid={`button-service-${service.name.toLowerCase().replace(/\s+/g, '-')}`}
-                  >
-                    Learn More
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+            {services.map((service, index) => {
+              const images = [
+                "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+                "https://images.unsplash.com/photo-1614599905316-f2d17b93f5f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+                "https://images.unsplash.com/photo-1586281380614-ba9ebca65ff8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+                "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+              ];
+              return (
+                <Card key={index} className="shadow-lg hover:shadow-xl transition duration-300">
+                  <div className="relative">
+                    <img 
+                      src={images[index]} 
+                      alt={service.name} 
+                      className="w-full h-48 object-cover rounded-t-xl"
+                    />
+                  </div>
+                  <CardContent className="p-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.name}</h3>
+                    <p className="text-gray-600 mb-6">{service.description}</p>
+                    <Button 
+                      size="lg"
+                      className="w-full bg-orange-600 text-white hover:bg-orange-700"
+                      data-testid={`button-service-${service.name.toLowerCase().replace(/\s+/g, '-')}`}
+                    >
+                      Learn More
+                    </Button>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
