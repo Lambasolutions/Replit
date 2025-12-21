@@ -37,8 +37,8 @@ export default function DSC() {
       <Header />
       
       {/* Enhanced Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-green-600 to-green-800 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+      <section className="relative py-20 bg-gradient-to-r from-green-700 to-green-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-40">
           <img 
             src="https://images.unsplash.com/photo-1554224311-beab60ae8629?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=600" 
             alt="Security" 
@@ -51,8 +51,8 @@ export default function DSC() {
               ← Back to Services
             </button>
           </Link>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Digital Signature Certificate (DSC)</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl leading-relaxed">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">Digital Signature Certificate (DSC)</h1>
+          <p className="text-lg md:text-xl mb-8 max-w-3xl leading-relaxed drop-shadow-md">
             Secure your digital identity with government-approved digital signatures. Get instant authentication for all your online transactions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

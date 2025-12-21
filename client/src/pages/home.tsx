@@ -48,8 +48,8 @@ export default function Home() {
       <Header />
       
       {/* Hero Section - More Engaging */}
-      <section id="home" className="relative bg-gradient-to-r from-primary to-secondary text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+      <section id="home" className="relative bg-gradient-to-br from-blue-700 via-blue-600 to-blue-800 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -59,18 +59,18 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
               Everything Your Business<br />
-              <span className="text-accent">Needs to Succeed</span>
+              <span className="text-amber-300">Needs to Succeed</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white drop-shadow-md">
               From government registrations to premium products, we've got all the solutions you need in one place.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/services">
                 <Button 
                   size="lg" 
-                  className="bg-accent text-white hover:bg-accent/90 px-8 py-3 text-lg"
+                  className="bg-amber-400 text-gray-900 hover:bg-amber-500 px-8 py-3 text-lg font-bold"
                   data-testid="button-explore-services"
                 >
                   Explore Services
@@ -78,8 +78,7 @@ export default function Home() {
               </Link>
               <Button 
                 size="lg" 
-                variant="secondary" 
-                className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg"
+                className="bg-white text-blue-700 hover:bg-gray-100 px-8 py-3 text-lg font-bold"
                 onClick={() => scrollToSection('contact')}
                 data-testid="button-contact-us"
               >
@@ -377,7 +376,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us - Warmer Tone */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Work With Us?</h2>
@@ -393,9 +392,9 @@ export default function Home() {
               { icon: "fas fa-rocket", title: "Expert Team", desc: "15+ years of experience" },
               { icon: "fas fa-handshake", title: "Your Success Matters", desc: "We're invested in helping you grow" }
             ].map((item, index) => (
-              <Card key={index} className="shadow-lg border-0">
+              <Card key={index} className="shadow-md border border-gray-200 hover:shadow-lg transition">
                 <CardContent className="p-8 text-center">
-                  <i className={`${item.icon} text-4xl text-primary mb-4`}></i>
+                  <i className={`${item.icon} text-4xl text-blue-600 mb-4`}></i>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
                 </CardContent>
@@ -406,7 +405,7 @@ export default function Home() {
       </section>
 
       {/* Payment Section */}
-      <section id="payment" className="py-20 bg-white">
+      <section id="payment" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Easy Payment Options</h2>
