@@ -60,16 +60,18 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-accent">He upon whom all depends</span>
+              Your Trusted Partner for<br />
+              <span className="text-accent">Complete Business Solutions</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Lambana Solutions is your trusted partner for complete business support across government services, premium products, and international trade.
+              From government services to premium products, Lambana Solutions provides comprehensive business support across multiple industries with excellence and trust.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 className="bg-accent text-white hover:bg-accent/90 px-8 py-3 text-lg"
                 onClick={() => scrollToSection('services')}
+                data-testid="button-explore-services"
               >
                 <i className="fas fa-search mr-2"></i>
                 Explore Our Services
@@ -79,6 +81,7 @@ export default function Home() {
                 variant="secondary" 
                 className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg"
                 onClick={() => scrollToSection('contact')}
+                data-testid="button-contact-us"
               >
                 <i className="fas fa-phone mr-2"></i>
                 Contact Us Today
@@ -114,7 +117,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { number: "500+", label: "Happy Clients" },
-              { number: "10+", label: "Service Categories" },
+              { number: "12+", label: "Service Categories" },
               { number: "15+", label: "Years Experience" },
               { number: "24/7", label: "Support Available" }
             ].map((stat, index) => (
@@ -155,9 +158,9 @@ export default function Home() {
                   <i className="fas fa-landmark text-2xl text-primary mr-3"></i>
                   <h3 className="text-xl font-bold">Government & Citizen Services</h3>
                 </div>
-                <p className="text-gray-600 mb-4">GST Services, Digital Signature Certificates, CSC Centre services, and comprehensive public service solutions.</p>
+                <p className="text-gray-600 mb-4">Complete business registration, GST services, Digital Signature Certificates, and comprehensive public service solutions.</p>
                 <div className="space-y-2 mb-6">
-                  {["GST Services", "Digital Signature Certificate (DSC)", "CSC Centre", "Other Public Services"].map((service, index) => (
+                  {["Company Registration (All Types)", "GST Services", "Digital Signature Certificate (DSC)", "CSC Centre Services"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
@@ -271,9 +274,38 @@ export default function Home() {
                   <i className="fas fa-leaf text-2xl text-primary mr-3"></i>
                   <h3 className="text-xl font-bold">Foods & Agri-Products</h3>
                 </div>
-                <p className="text-gray-600 mb-4">Premium South Indian pickles, papadams, ready-to-eat meals, and freeze-dried foods with authentic flavors.</p>
+                <p className="text-gray-600 mb-4">Premium South Indian pickles, snacks, ready-to-eat meals, freeze-dried foods, and dairy products with authentic flavors.</p>
                 <div className="space-y-2 mb-6">
-                  {["South Indian Pickles", "Papadams", "Ready-to-Eat Meals", "Freeze-Dried Foods"].map((service, index) => (
+                  {["South Indian Pickles & Snacks", "Ready-to-Eat Meals", "Freeze-Dried & Dehydrated Foods", "Dairy Products"].map((service, index) => (
+                    <div key={index} className="flex items-center text-sm text-gray-600">
+                      <i className="fas fa-check text-green-500 mr-2"></i>
+                      <span>{service}</span>
+                    </div>
+                  ))}
+                </div>
+                <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                  Learn More <i className="fas fa-arrow-right ml-2"></i>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* E-commerce Solutions */}
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+              <div className="relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                  alt="E-commerce and online shopping platform" 
+                  className="w-full h-48 object-cover rounded-t-xl"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <i className="fas fa-shopping-cart text-2xl text-primary mr-3"></i>
+                  <h3 className="text-xl font-bold">E-commerce Solutions</h3>
+                </div>
+                <p className="text-gray-600 mb-4">Complete online marketplace solutions for agri products, food items, and textiles with integrated payment systems.</p>
+                <div className="space-y-2 mb-6">
+                  {["Online Product Catalog", "Payment Gateway Integration", "Order Management", "Customer Support"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
@@ -290,7 +322,7 @@ export default function Home() {
             <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                  src="https://images.unsplash.com/photo-1586281380614-ba9ebca65ff8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
                   alt="Traditional textile manufacturing and fabrics" 
                   className="w-full h-48 object-cover rounded-t-xl"
                 />
@@ -300,9 +332,9 @@ export default function Home() {
                   <i className="fas fa-tshirt text-2xl text-primary mr-3"></i>
                   <h3 className="text-xl font-bold">Textiles</h3>
                 </div>
-                <p className="text-gray-600 mb-4">Premium textile products with traditional craftsmanship, custom collections, and manufacturing excellence.</p>
+                <p className="text-gray-600 mb-4">Premium Khadi, Handloom, and Machine Loom textiles with traditional craftsmanship and export services.</p>
                 <div className="space-y-2 mb-6">
-                  {["Shop by Collection", "Our Manufacturing Process", "Custom Orders", "Quality Assurance"].map((service, index) => (
+                  {["Khadi Products & Sarees", "Handloom Collections", "Machine Loom Textiles", "Custom Textile Orders"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
@@ -630,7 +662,7 @@ export default function Home() {
                 <CardContent className="p-8">
                   <h4 className="text-xl font-bold text-gray-900 mb-4">Why Choose Lambana Solutions?</h4>
                   <p className="text-gray-600 mb-4">We're committed to delivering excellence in every service we provide.</p>
-                  <div className="space-y-3">
+                  <div className="space-y-3 mb-6">
                     {[
                       "Expert team with years of experience",
                       "Comprehensive service portfolio",
@@ -643,6 +675,21 @@ export default function Home() {
                         <span className="text-gray-700">{feature}</span>
                       </div>
                     ))}
+                  </div>
+
+                  {/* WhatsApp Chat Button */}
+                  <div className="border-t pt-6">
+                    <h5 className="font-semibold text-gray-900 mb-3">Need Immediate Help?</h5>
+                    <a 
+                      href="https://wa.me/+919986000219?text=Hello!%20I%20have%20a%20question%20about%20your%20services."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition duration-300"
+                    >
+                      <i className="fab fa-whatsapp text-xl mr-2"></i>
+                      Chat on WhatsApp
+                    </a>
+                    <p className="text-sm text-gray-500 mt-2">Get instant responses to your queries</p>
                   </div>
                 </CardContent>
               </Card>
