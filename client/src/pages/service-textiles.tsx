@@ -114,11 +114,11 @@ export default function Textiles() {
               ];
               return (
                 <Card key={index} className="shadow-lg hover:shadow-2xl transition duration-300 border-0 overflow-hidden">
-                  <div className="relative h-64 overflow-hidden bg-gray-100">
+                  <div className="relative h-48 bg-gray-200">
                     <img 
                       src={images[index]} 
                       alt={service.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="h-1 bg-gradient-to-r from-orange-600 to-orange-800"></div>
