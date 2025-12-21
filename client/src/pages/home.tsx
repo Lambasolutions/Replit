@@ -117,7 +117,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { number: "500+", label: "Happy Clients" },
-              { number: "6", label: "Service Categories" },
+              { number: "7", label: "Service Categories" },
               { number: "15+", label: "Years Active" },
               { number: "24/7", label: "Support" }
             ].map((stat, index) => (
@@ -323,6 +323,37 @@ export default function Home() {
                     ))}
                   </div>
                   <Button className="w-full bg-indigo-600 text-white hover:bg-indigo-700">
+                    Learn More →
+                  </Button>
+                </CardContent>
+              </Card>
+            </Link>
+
+            {/* Textiles */}
+            <Link href="/services/textiles">
+              <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 cursor-pointer h-full">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1586281380614-ba9ebca65ff8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                    alt="Textiles" 
+                    className="w-full h-48 object-cover rounded-t-xl"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <i className="fas fa-tshirt text-2xl text-orange-600 mr-3"></i>
+                    <h3 className="text-xl font-bold">Textiles</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4">Premium Khadi, Handloom, and Machine Loom textiles.</p>
+                  <div className="space-y-2 mb-6">
+                    {["Khadi Products", "Handloom Fabrics", "Custom Orders"].map((service, index) => (
+                      <div key={index} className="flex items-center text-sm text-gray-600">
+                        <i className="fas fa-check text-green-500 mr-2"></i>
+                        <span>{service}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <Button className="w-full bg-orange-600 text-white hover:bg-orange-700">
                     Learn More →
                   </Button>
                 </CardContent>

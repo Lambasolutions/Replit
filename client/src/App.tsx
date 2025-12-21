@@ -11,6 +11,7 @@ import CSC from "@/pages/service-csc";
 import Financial from "@/pages/service-financial";
 import Legal from "@/pages/service-legal";
 import Ecommerce from "@/pages/service-ecommerce";
+import Textiles from "@/pages/service-textiles";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/services/financial-services" component={Financial} />
       <Route path="/services/legal-services" component={Legal} />
       <Route path="/services/ecommerce-solutions" component={Ecommerce} />
+      <Route path="/services/textiles" component={Textiles} />
       <Route component={NotFound} />
     </Switch>
   );
