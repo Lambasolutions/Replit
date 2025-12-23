@@ -3,13 +3,30 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import textileImage from "@assets/generated_images/professional_textile_and_handloom_fabrics.png";
 
 export default function Ecommerce() {
   const services = [
-    { name: "Agri Products", description: "Fresh agricultural produce online" },
-    { name: "South Indian Foods", description: "Authentic regional cuisine" },
-    { name: "Textiles", description: "Khadi, handloom, and machine loom products" },
-    { name: "Export Services", description: "International trade facilitation" }
+    { 
+      name: "Agri Products", 
+      description: "Fresh agricultural produce online",
+      image: "https://images.unsplash.com/photo-1488459716781-6bae67b1902f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+    },
+    { 
+      name: "South Indian Foods", 
+      description: "Authentic regional cuisine",
+      image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+    },
+    { 
+      name: "Textiles", 
+      description: "Khadi, handloom, and machine loom products",
+      image: textileImage
+    },
+    { 
+      name: "Export Services", 
+      description: "International trade facilitation",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+    }
   ];
 
   return (
@@ -34,7 +51,14 @@ export default function Ecommerce() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="shadow-lg hover:shadow-xl transition duration-300">
+              <Card key={index} className="shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                <div className="relative h-48 overflow-hidden bg-gray-200">
+                  <img 
+                    src={service.image}
+                    alt={service.name}
+                    className="w-full h-full object-cover hover:scale-105 transition duration-300"
+                  />
+                </div>
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.name}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
