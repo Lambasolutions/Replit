@@ -35,7 +35,6 @@ export default function Header() {
     { name: "Financial Services", href: "/services/financial-services" },
     { name: "Legal Services", href: "/services/legal-services" },
     { name: "E-commerce Solutions", href: "/services/ecommerce-solutions" },
-    { name: "Textiles", href: "/services/textiles" },
   ];
 
   return (
