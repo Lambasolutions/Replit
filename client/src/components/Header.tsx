@@ -45,6 +45,7 @@ export default function Header() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <h1 className="text-2xl font-bold text-primary">Lambana Solutions</h1>
+              <p className="text-sm text-gray-600 italic">He upon whom all depends</p>
             </div>
           </div>
           
