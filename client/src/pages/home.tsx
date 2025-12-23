@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import textileImage from "@assets/generated_images/premium_corporate_luxury_textile_photography.png";
+import textileImage from "@assets/generated_images/professional_textile_and_handloom_fabrics.png";
 
 export default function Home() {
   useEffect(() => {
