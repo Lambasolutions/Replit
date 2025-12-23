@@ -322,9 +322,10 @@ export default function Home() {
             <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1586281380614-ba9ebca65ff8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                  src="https://images.unsplash.com/photo-1575529387153-4e0e38368cf8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
                   alt="Traditional textile manufacturing and fabrics" 
                   className="w-full h-48 object-cover rounded-t-xl"
+                  data-testid="image-textiles"
                 />
               </div>
               <CardContent className="p-6">
