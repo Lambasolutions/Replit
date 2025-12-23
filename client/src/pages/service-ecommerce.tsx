@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
-import textileImage from "@assets/generated_images/professional_textile_and_handloom_fabrics.png";
 
 export default function Ecommerce() {
   const services = [
@@ -20,7 +19,7 @@ export default function Ecommerce() {
     { 
       name: "Textiles", 
       description: "Khadi, handloom, and machine loom products",
-      image: textileImage
+      image: "https://images.unsplash.com/photo-1586281380614-ba9ebca65ff8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     { 
       name: "Export Services", 
@@ -57,6 +56,7 @@ export default function Ecommerce() {
                     src={service.image}
                     alt={service.name}
                     className="w-full h-full object-cover hover:scale-105 transition duration-300"
+                    data-testid={`image-${service.name.toLowerCase().replace(/\s+/g, '-')}`}
                   />
                 </div>
                 <CardContent className="p-8">
