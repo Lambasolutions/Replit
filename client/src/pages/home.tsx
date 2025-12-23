@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import textileImage from "@assets/generated_images/professional_textile_and_handloom_fabrics.png";
+import importExportImage from "@assets/generated_images/international_shipping_and_global_trade.png";
 
 export default function Home() {
   useEffect(() => {
@@ -378,7 +379,7 @@ export default function Home() {
                 </div>
                 <div className="hidden lg:block">
                   <img 
-                    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+                    src={importExportImage}
                     alt="International shipping and global trade" 
                     className="w-full h-full object-cover"
                   />
