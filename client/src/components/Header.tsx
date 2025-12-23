@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Menu, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import lambanaLogo from "@assets/WhatsApp_Image_2025-10-27_at_04.16.53_ae70f073_1766455376068.jpg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +43,13 @@ export default function Header() {
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
+          <div className="flex items-center gap-3">
+            <img 
+              src={lambanaLogo}
+              alt="Lambana Solutions Logo" 
+              className="h-16 w-auto"
+              data-testid="logo-lambana"
+            />
             <div className="flex-shrink-0">
               <h1 className="text-2xl font-bold text-primary">Lambana Solutions</h1>
               <p className="text-sm text-gray-600 italic">He upon whom all depends</p>
