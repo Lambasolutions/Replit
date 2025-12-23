@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import textileImage from "@assets/stock_images/traditional_indian_t_583ec30a.jpg";
+import textileImage from "@assets/generated_images/colorful_traditional_indian_textiles_handloom_fabrics.png";
 
 export default function Home() {
   useEffect(() => {
