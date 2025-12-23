@@ -3,13 +3,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import agriImage from "@assets/generated_images/fresh_agricultural_products_and_farm_produce.png";
+import textileImage from "@assets/generated_images/professional_textile_and_handloom_fabrics.png";
 
 export default function Ecommerce() {
   const services = [
     { 
       name: "Agri Products", 
       description: "Fresh agricultural produce online",
-      image: "https://images.unsplash.com/photo-1488459716781-6bae67b1902f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: agriImage
     },
     { 
       name: "South Indian Foods", 
@@ -19,7 +21,7 @@ export default function Ecommerce() {
     { 
       name: "Textiles", 
       description: "Khadi, handloom, and machine loom products",
-      image: "https://images.unsplash.com/photo-1586281380614-ba9ebca65ff8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: textileImage
     },
     { 
       name: "Export Services", 
