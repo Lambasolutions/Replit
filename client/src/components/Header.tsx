@@ -43,17 +43,13 @@ export default function Header() {
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             <img 
               src={lambanaLogo}
               alt="Lambana Solutions Logo" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
               data-testid="logo-lambana"
             />
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-primary">Lambana Solutions</h1>
-              <p className="text-sm text-gray-600 italic">He upon whom all depends</p>
-            </div>
           </div>
           
           <div className="hidden md:block">
