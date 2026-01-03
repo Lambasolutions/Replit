@@ -1,4 +1,4 @@
-import { db } from "../../db";
+import { storage as db } from "../../storage";
 import { conversations, messages } from "@shared/schema";
 import { eq, desc } from "drizzle-orm";
 

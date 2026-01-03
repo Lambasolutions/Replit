@@ -31,12 +31,15 @@ function Router() {
   );
 }
 
+import AIChat from "@/components/AIChat";
+
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Router />
+        <AIChat />
       </TooltipProvider>
     </QueryClientProvider>
   );

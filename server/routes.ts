@@ -4,7 +4,10 @@ import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
 import { z } from "zod";
 
+import { registerChatRoutes } from "./replit_integrations/chat";
+
 export async function registerRoutes(app: Express): Promise<Server> {
+  registerChatRoutes(app);
   
   // Contact form submission
   app.post("/api/contacts", async (req, res) => {
