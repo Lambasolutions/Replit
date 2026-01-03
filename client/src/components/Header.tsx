@@ -44,11 +44,12 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3">
-            <div className="h-12 w-12 overflow-hidden flex items-center justify-center rounded-lg border border-gray-100 shadow-sm bg-white">
+            <div className="h-14 w-14 flex items-center justify-center">
               <img 
                 src={lambanaLogo}
                 alt="Lambana Solutions Logo" 
                 className="h-full w-full object-contain"
+                style={{ mixBlendMode: 'multiply' }}
                 data-testid="logo-lambana"
               />
             </div>
