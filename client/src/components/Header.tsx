@@ -44,12 +44,14 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3">
-            <img 
-              src={lambanaLogo}
-              alt="Lambana Solutions Logo" 
-              className="h-16 w-auto"
-              data-testid="logo-lambana"
-            />
+            <div className="h-16 w-16 overflow-hidden flex items-center justify-center">
+              <img 
+                src={lambanaLogo}
+                alt="Lambana Solutions Logo" 
+                className="h-[200%] w-auto max-w-none -translate-y-[15%]"
+                data-testid="logo-lambana"
+              />
+            </div>
             <div className="flex-shrink-0">
               <h1 className="text-2xl font-bold text-primary">Lambana Solutions</h1>
               <p className="text-sm text-gray-600 italic">He upon whom all depends</p>
