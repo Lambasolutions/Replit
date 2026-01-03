@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Menu, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "wouter";
-import lambanaLogo from "@assets/WhatsApp_Image_2025-10-27_at_04.16.53_ae70f073_1766455376068.jpg";
+import lambanaLogo from "@assets/tree_1767447039186.jpeg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,18 +44,17 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3">
-            <div className="h-14 w-14 overflow-hidden flex items-center justify-center rounded-lg border border-gray-100 shadow-sm bg-white">
+            <div className="h-12 w-12 overflow-hidden flex items-center justify-center rounded-lg border border-gray-100 shadow-sm bg-white">
               <img 
                 src={lambanaLogo}
                 alt="Lambana Solutions Logo" 
-                className="h-[140%] w-auto max-w-none -translate-y-[12%]"
-                style={{ objectFit: 'contain', objectPosition: 'center' }}
+                className="h-full w-full object-contain"
                 data-testid="logo-lambana"
               />
             </div>
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-primary tracking-tight">Lambana Solutions</h1>
-              <p className="text-[10px] sm:text-xs text-gray-600 italic font-medium">He upon whom all depends</p>
+              <h1 className="text-2xl font-bold text-primary tracking-tight leading-tight">Lambana Solutions</h1>
+              <p className="text-[10px] sm:text-xs text-gray-600 italic font-medium leading-tight">He upon whom all depends</p>
             </div>
           </div>
           
