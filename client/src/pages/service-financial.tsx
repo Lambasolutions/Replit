@@ -9,6 +9,8 @@ export default function Financial() {
     { name: "Personal Loan", description: "Quick personal financing solutions" },
     { name: "Business Loan", description: "Capital for business growth" },
     { name: "Loan Against Property", description: "Secure loan against real estate" },
+    { name: "Home Loan", description: "Financing for your dream home" },
+    { name: "Educational Loan", description: "Funding for higher education and professional courses" },
     { name: "Project Finance", description: "Large project funding assistance" }
   ];
 
