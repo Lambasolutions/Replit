@@ -48,7 +48,8 @@ export default function Header() {
               <img 
                 src={lambanaLogo}
                 alt="Lambana Solutions Logo" 
-                className="h-[450%] w-auto max-w-none -translate-y-[2%]"
+                className="h-[140%] w-auto max-w-none -translate-y-[12%]"
+                style={{ objectFit: 'contain', objectPosition: 'center' }}
                 data-testid="logo-lambana"
               />
             </div>
