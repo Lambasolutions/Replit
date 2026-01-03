@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
@@ -47,6 +48,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Lambana Solutions - Comprehensive Business Services & Products</title>
+        <meta name="description" content="Lambana Solutions offers expert company registration, financial services, legal documentation, premium food products, and e-commerce solutions. He upon whom all depends." />
+        <meta property="og:title" content="Lambana Solutions - Your Business Growth Partner" />
+        <meta property="og:description" content="Professional services for government compliance, financial growth, and premium product sourcing." />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

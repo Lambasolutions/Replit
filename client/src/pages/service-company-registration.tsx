@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
@@ -17,6 +18,10 @@ export default function CompanyRegistration() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Company Registration - Proprietorship, LLP, Pvt Ltd | Lambana Solutions</title>
+        <meta name="description" content="Register your business with ease. We handle Proprietorship, LLP, OPC, and Private Limited Company registrations with full compliance." />
+      </Helmet>
       <Header />
       
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-400 text-white">

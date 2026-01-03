@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
@@ -16,6 +17,10 @@ export default function Financial() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Financial Services - Home, Education & Business Loans | Lambana Solutions</title>
+        <meta name="description" content="Expert financial solutions including Home Loans, Educational Loans, Business Loans, and Project Finance for your growth." />
+      </Helmet>
       <Header />
       
       <section className="py-20 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white">

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
@@ -32,6 +33,10 @@ export default function Ecommerce() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>E-commerce Solutions - Agri, Textiles & Global Trade | Lambana Solutions</title>
+        <meta name="description" content="Comprehensive e-commerce platform for agricultural products, premium textiles, and international trade services." />
+      </Helmet>
       <Header />
       
       <section className="py-20 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white">
