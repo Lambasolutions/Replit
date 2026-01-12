@@ -74,6 +74,17 @@ export default function Services() {
         { name: "Textiles", description: "Khadi, handloom, and machine loom products" },
         { name: "Export Services", description: "International trade facilitation" }
       ]
+    },
+    {
+      title: "IT & BPO Solutions",
+      icon: "fas fa-laptop-code",
+      color: "bg-slate-500",
+      services: [
+        { name: "IT Services", description: "Software development and digital solutions" },
+        { name: "BPO Services", description: "Business process outsourcing" },
+        { name: "Digital Transformation", description: "Modernizing business processes" },
+        { name: "Process Automation", description: "Streamlining operations" }
+      ]
     }
   ];
 

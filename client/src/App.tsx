@@ -12,6 +12,7 @@ import Financial from "@/pages/service-financial";
 import Legal from "@/pages/service-legal";
 import Ecommerce from "@/pages/service-ecommerce";
 import ImportExport from "@/pages/service-import-export";
+import ITBPO from "@/pages/service-it-bpo";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -26,12 +27,11 @@ function Router() {
       <Route path="/services/legal-services" component={Legal} />
       <Route path="/services/ecommerce-solutions" component={Ecommerce} />
       <Route path="/services/import-export" component={ImportExport} />
+      <Route path="/services/it-bpo-solutions" component={ITBPO} />
       <Route component={NotFound} />
     </Switch>
   );
 }
-
-import AIChat from "@/components/AIChat";
 
 function App() {
   return (
