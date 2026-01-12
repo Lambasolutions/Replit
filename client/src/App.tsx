@@ -14,6 +14,7 @@ import Ecommerce from "@/pages/service-ecommerce";
 import ImportExport from "@/pages/service-import-export";
 import ITBPO from "@/pages/service-it-bpo";
 import NotFound from "@/pages/not-found";
+import AIChat from "@/components/AIChat";
 
 function Router() {
   return (
