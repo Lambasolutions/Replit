@@ -76,14 +76,25 @@ export default function Services() {
       ]
     },
     {
-      title: "IT & BPO Solutions",
+      title: "IT Solutions",
       icon: "fas fa-laptop-code",
-      color: "bg-slate-500",
+      color: "bg-blue-600",
       services: [
-        { name: "IT Services", description: "Software development and digital solutions" },
-        { name: "BPO Services", description: "Business process outsourcing" },
-        { name: "Digital Transformation", description: "Modernizing business processes" },
-        { name: "Process Automation", description: "Streamlining operations" }
+        { name: "Software Development", description: "Custom software tailored to your business needs" },
+        { name: "Web Design & Development", description: "Professional websites and web applications" },
+        { name: "Cloud Solutions", description: "Scalable cloud infrastructure and hosting" },
+        { name: "Cybersecurity", description: "Protecting business data and infrastructure" }
+      ]
+    },
+    {
+      title: "BPO Services",
+      icon: "fas fa-headset",
+      color: "bg-slate-600",
+      services: [
+        { name: "Customer Support", description: "24/7 multi-channel customer service solutions" },
+        { name: "Data Entry & Processing", description: "Accurate and efficient data management services" },
+        { name: "Back Office Operations", description: "Streamlining administrative processes" },
+        { name: "Process Automation", description: "Increasing efficiency through automated workflows" }
       ]
     }
   ];

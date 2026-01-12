@@ -5,21 +5,21 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 
-export default function ITBPOSolutions() {
+export default function BPOServices() {
   const services = [
-    { name: "IT Services", description: "Software development, web design, and digital solutions" },
-    { name: "BPO Services", description: "Business process outsourcing and customer support" },
-    { name: "Digital Transformation", description: "Modernizing business processes with technology" },
-    { name: "Process Automation", description: "Streamlining operations through automation tools" },
-    { name: "Cloud Solutions", description: "Scalable cloud infrastructure and hosting" },
-    { name: "Cybersecurity", description: "Protecting business data and infrastructure" }
+    { name: "Customer Support", description: "24/7 multi-channel customer service solutions" },
+    { name: "Data Entry & Processing", description: "Accurate and efficient data management services" },
+    { name: "Technical Support", description: "Expert technical assistance for your products" },
+    { name: "Back Office Operations", description: "Streamlining your administrative business processes" },
+    { name: "Telemarketing", description: "Professional lead generation and sales support" },
+    { name: "Process Automation", description: "Increasing efficiency through automated workflows" }
   ];
 
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>IT & BPO Solutions - Digital Transformation | Lambana Solutions</title>
-        <meta name="description" content="Cutting-edge IT services and BPO solutions. From software development to process automation, we help your business thrive in the digital age." />
+        <title>BPO Services - Business Process Outsourcing | Lambana Solutions</title>
+        <meta name="description" content="Professional BPO services to streamline your operations. From customer support to back-office management." />
       </Helmet>
       <Header />
       
@@ -30,9 +30,9 @@ export default function ITBPOSolutions() {
               ← Back to Services
             </button>
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">IT & BPO Solutions</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">BPO Services</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl">
-            Empowering your business with cutting-edge technology and efficient process outsourcing.
+            Reliable business process outsourcing solutions to enhance your operational efficiency.
           </p>
         </div>
       </section>
@@ -55,21 +55,6 @@ export default function ITBPOSolutions() {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready for Digital Transformation?</h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Consult with our technology experts to streamline your business operations.
-          </p>
-          <Button 
-            size="lg" 
-            className="bg-slate-700 text-white hover:bg-slate-800 px-8 py-4 text-lg font-semibold"
-          >
-            Schedule Consultation
-          </Button>
         </div>
       </section>
 
