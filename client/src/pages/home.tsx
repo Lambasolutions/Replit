@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
@@ -11,7 +12,6 @@ import importExportImage from "@assets/generated_images/international_shipping_a
 
 export default function Home() {
   useEffect(() => {
-    // Smooth scrolling for navigation links
     const handleSmoothScroll = (e: Event) => {
       const target = e.target as HTMLAnchorElement;
       if (target.getAttribute('href')?.startsWith('#')) {
@@ -80,7 +80,6 @@ export default function Home() {
                 size="lg" 
                 className="bg-accent text-white hover:bg-accent/90 px-8 py-3 text-lg"
                 onClick={() => scrollToSection('services')}
-                data-testid="button-explore-services"
               >
                 <i className="fas fa-search mr-2"></i>
                 Explore Our Services
@@ -90,7 +89,6 @@ export default function Home() {
                 variant="secondary" 
                 className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg"
                 onClick={() => scrollToSection('contact')}
-                data-testid="button-contact-us"
               >
                 <i className="fas fa-phone mr-2"></i>
                 Contact Us Today
@@ -176,9 +174,11 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                  Learn More <i className="fas fa-arrow-right ml-2"></i>
-                </Button>
+                <Link href="/services/company-registration">
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -205,9 +205,11 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                  Learn More <i className="fas fa-arrow-right ml-2"></i>
-                </Button>
+                <Link href="/services/financial-services">
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -234,38 +236,73 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                  Learn More <i className="fas fa-arrow-right ml-2"></i>
-                </Button>
+                <Link href="/services/legal-services">
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
-            {/* IT & BPO Solutions */}
+            {/* IT Solutions */}
             <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" 
-                  alt="IT and BPO solutions office" 
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                  alt="IT solutions office" 
                   className="w-full h-48 object-cover rounded-t-xl"
                 />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <i className="fas fa-laptop-code text-2xl text-primary mr-3"></i>
-                  <h3 className="text-xl font-bold">IT & BPO Solutions</h3>
+                  <h3 className="text-xl font-bold">IT Solutions</h3>
                 </div>
-                <p className="text-gray-600 mb-4">Cutting-edge technology services and business process outsourcing solutions for modern enterprises.</p>
+                <p className="text-gray-600 mb-4">Cutting-edge technology services and digital transformation for modern enterprises.</p>
                 <div className="space-y-2 mb-6">
-                  {["IT Services", "BPO Services", "Digital Transformation", "Process Automation"].map((service, index) => (
+                  {["Software Development", "Cloud Solutions", "Cybersecurity", "Mobile App Development"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
                     </div>
                   ))}
                 </div>
-                <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                  Learn More <i className="fas fa-arrow-right ml-2"></i>
-                </Button>
+                <Link href="/services/it-solutions">
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* BPO Services */}
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+              <div className="relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1549923746-c50264f39a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                  alt="BPO services customer support" 
+                  className="w-full h-48 object-cover rounded-t-xl"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <i className="fas fa-headset text-2xl text-primary mr-3"></i>
+                  <h3 className="text-xl font-bold">BPO Services</h3>
+                </div>
+                <p className="text-gray-600 mb-4">Efficient business process outsourcing and customer support solutions.</p>
+                <div className="space-y-2 mb-6">
+                  {["Customer Support", "Data Processing", "Back Office Ops", "Process Automation"].map((service, index) => (
+                    <div key={index} className="flex items-center text-sm text-gray-600">
+                      <i className="fas fa-check text-green-500 mr-2"></i>
+                      <span>{service}</span>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/services/bpo-services">
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -321,9 +358,11 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                  Learn More <i className="fas fa-arrow-right ml-2"></i>
-                </Button>
+                <Link href="/services/ecommerce-solutions">
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -334,7 +373,6 @@ export default function Home() {
                   src={textileImage}
                   alt="Traditional textile manufacturing and fabrics" 
                   className="w-full h-48 object-cover rounded-t-xl"
-                  data-testid="image-textiles"
                 />
               </div>
               <CardContent className="p-6">
@@ -351,9 +389,11 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                  Learn More <i className="fas fa-arrow-right ml-2"></i>
-                </Button>
+                <Link href="/services/ecommerce-solutions">
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </div>
@@ -380,9 +420,11 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <Button className="bg-accent text-white hover:bg-accent/90 px-8 py-3 font-semibold">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
-                  </Button>
+                  <Link href="/services/import-export">
+                    <Button className="bg-accent text-white hover:bg-accent/90 px-8 py-3 font-semibold">
+                      Learn More <i className="fas fa-arrow-right ml-2"></i>
+                    </Button>
+                  </Link>
                 </div>
                 <div className="hidden lg:block">
                   <img 
@@ -470,243 +512,101 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
-          {/* Story Section */}
-          <Card className="mt-16 shadow-lg p-8 lg:p-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Story</h3>
-            <p className="text-gray-600 mb-6">
-              Founded with a vision to simplify business operations, Lambana Solutions has grown from a small startup to a comprehensive service provider spanning multiple industries. Our journey began with government services and has evolved to include financial solutions, legal services, premium food products, handloom textiles, and international trade.
-            </p>
-            <p className="text-gray-600 mb-8">
-              What sets us apart is our commitment to understanding each client's unique needs and providing tailored solutions that drive real results. From small businesses to large enterprises, we've helped hundreds of clients achieve their objectives with our expertise and dedication.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              {[
-                "One-stop solution for all business needs",
-                "Expert team with industry experience", 
-                "Customized solutions for every client",
-                "24/7 customer support availability",
-                "Competitive pricing with transparent processes",
-                "Quality assurance and timely delivery"
-              ].map((feature, index) => (
-                <div key={index} className="flex items-center">
-                  <i className="fas fa-check-circle text-green-500 text-xl mr-3"></i>
-                  <span className="text-gray-700">{feature}</span>
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center">
-              <h4 className="text-xl font-bold text-gray-900 mb-4">Ready to Partner With Us?</h4>
-              <p className="text-gray-600 mb-6">Join hundreds of satisfied clients who trust Lambana Solutions for their business needs. Let's discuss how we can help your business thrive.</p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="bg-primary text-white hover:bg-primary/90 px-8 py-3 font-semibold">
-                  Get Started Today
-                </Button>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 font-semibold">
-                  Contact Our Team
-                </Button>
-              </div>
-            </div>
-          </Card>
         </div>
       </section>
 
-      {/* Payment Options Section */}
+      {/* Payment Portal Section */}
       <section id="payment" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Secure Payment Options</h2>
-            <p className="text-xl text-gray-600 mb-4">Choose from our trusted payment gateways for secure and fast transactions</p>
-            <p className="text-gray-500">For assistance: <span className="font-semibold">+91 99860 00219</span> | <span className="font-semibold">d.phani.kumar@lambanasolutions.com</span></p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            {/* Stripe Payment */}
-            <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <i className="fas fa-credit-card text-3xl text-blue-600 mr-4"></i>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900">Stripe</h3>
-                    <p className="text-gray-600">Credit/Debit Cards, Digital Wallets</p>
-                  </div>
-                </div>
-                <div className="mb-6">
-                  {[
-                    { icon: "fas fa-shield-alt", text: "Bank-level security" },
-                    { icon: "fas fa-bolt", text: "Instant payment processing" },
-                    { icon: "fas fa-globe", text: "International payments supported" }
-                  ].map((feature, index) => (
-                    <div key={index} className="flex items-center text-sm text-gray-600 mb-2">
-                      <i className={`${feature.icon} text-green-500 mr-2`}></i>
-                      <span>{feature.text}</span>
-                    </div>
-                  ))}
-                </div>
-                <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
-                  Setup Stripe <i className="fas fa-arrow-right ml-2"></i>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* PayPal Payment */}
-            <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border-yellow-200">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <i className="fab fa-paypal text-3xl text-blue-700 mr-4"></i>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900">PayPal</h3>
-                    <p className="text-gray-600">PayPal Account, Credit/Debit Cards</p>
-                  </div>
-                </div>
-                <div className="mb-6">
-                  {[
-                    { icon: "fas fa-user-shield", text: "Buyer protection guarantee" },
-                    { icon: "fas fa-users", text: "Trusted by millions worldwide" },
-                    { icon: "fas fa-mobile-alt", text: "Mobile-friendly checkout" }
-                  ].map((feature, index) => (
-                    <div key={index} className="flex items-center text-sm text-gray-600 mb-2">
-                      <i className={`${feature.icon} text-green-500 mr-2`}></i>
-                      <span>{feature.text}</span>
-                    </div>
-                  ))}
-                </div>
-                <Button className="w-full bg-blue-700 text-white hover:bg-blue-800">
-                  Setup PayPal <i className="fas fa-arrow-right ml-2"></i>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Payment Security Features */}
-          <div className="bg-gray-50 rounded-xl p-8 mb-12">
-            <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">Payment Security Features</h3>
+          <div className="bg-neutral rounded-2xl p-8 md:p-12 shadow-inner">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Secure Payment Portal</h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">Quick and secure payment processing for all your service fees and product purchases.</p>
+            </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { icon: "fas fa-lock", color: "text-green-600", title: "SSL Encryption", desc: "256-bit SSL encryption for all transactions" },
-                { icon: "fas fa-certificate", color: "text-blue-600", title: "PCI Compliant", desc: "Industry standard security protocols" },
-                { icon: "fas fa-tachometer-alt", color: "text-purple-600", title: "Instant Processing", desc: "Fast and reliable payment processing" }
-              ].map((feature, index) => (
-                <div key={index} className="text-center">
-                  <i className={`${feature.icon} text-3xl ${feature.color} mb-4`}></i>
-                  <h4 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h4>
-                  <p className="text-gray-600">{feature.desc}</p>
+                { title: "Service Fees", icon: "fas fa-file-invoice-dollar", desc: "Pay for registration, legal, or consulting services." },
+                { title: "Product Purchase", icon: "fas fa-shopping-bag", desc: "Secure payments for food and textile orders." },
+                { title: "AMC Payments", icon: "fas fa-sync-alt", desc: "Annual maintenance and renewal service fees." }
+              ].map((item, index) => (
+                <div key={index} className="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100 hover:border-primary transition duration-300">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary text-2xl">
+                    <i className={item.icon}></i>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">{item.title}</h3>
+                  <p className="text-gray-600 mb-6">{item.desc}</p>
+                  <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white">
+                    Proceed to Pay
+                  </Button>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Accepted Payment Methods */}
-          <div className="text-center">
-            <h3 className="text-xl font-bold text-gray-900 mb-6">We Accept</h3>
-            <div className="flex flex-wrap justify-center items-center gap-6 opacity-70">
-              <Badge variant="outline" className="text-blue-700 border-blue-200">
-                <i className="fab fa-cc-visa text-2xl mr-2"></i>Visa
-              </Badge>
-              <Badge variant="outline" className="text-red-600 border-red-200">
-                <i className="fab fa-cc-mastercard text-2xl mr-2"></i>Mastercard
-              </Badge>
-              <Badge variant="outline" className="text-green-600 border-green-200">
-                <i className="fab fa-cc-amex text-2xl mr-2"></i>American Express
-              </Badge>
-              <Badge variant="outline" className="text-purple-600 border-purple-200">
-                <i className="fas fa-mobile-alt text-2xl mr-2"></i>UPI
-              </Badge>
-              <Badge variant="outline" className="text-orange-600 border-orange-200">
-                NetBanking
-              </Badge>
-              <Badge variant="outline" className="text-blue-800 border-blue-200">
-                Digital Wallets
-              </Badge>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-neutral">
+      <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
-            <p className="text-xl text-gray-600">Ready to transform your business? Contact us today for a consultation.</p>
-          </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+            <div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+              <p className="text-lg text-gray-600 mb-8">Have questions or ready to start your next business venture? Our experts are here to help you every step of the way.</p>
+              
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                    <i className="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold">Office Address</h4>
+                    <p className="text-gray-600">Lambana Solutions Hub, Business Center, City, State, ZIP</p>
+                  </div>
+                </div>
                 
-                <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                    <i className="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold">Call Us</h4>
+                    <p className="text-gray-600">+91 [Phone Number]</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                    <i className="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold">Email Us</h4>
+                    <p className="text-gray-600">info@lambanasolutions.com</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-12">
+                <h4 className="text-lg font-bold mb-4">Follow Us</h4>
+                <div className="flex space-x-4">
                   {[
-                    { 
-                      icon: "fas fa-map-marker-alt", 
-                      title: "Address", 
-                      content: "123 Business District\nChennai, Tamil Nadu 600001\nIndia" 
-                    },
-                    { 
-                      icon: "fas fa-envelope", 
-                      title: "Email", 
-                      content: "info@lambanasolutions.com" 
-                    },
-                    { 
-                      icon: "fas fa-clock", 
-                      title: "Business Hours", 
-                      content: "Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 9:00 AM - 2:00 PM\nSunday: Closed" 
-                    }
-                  ].map((info, index) => (
-                    <div key={index} className="flex items-start">
-                      <i className={`${info.icon} text-primary text-xl mt-1 mr-4`}></i>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">{info.title}</h4>
-                        <p className="text-gray-600 whitespace-pre-line">{info.content}</p>
-                      </div>
-                    </div>
+                    "fab fa-facebook-f",
+                    "fab fa-twitter",
+                    "fab fa-linkedin-in",
+                    "fab fa-instagram"
+                  ].map((icon, index) => (
+                    <a key={index} href="#" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition duration-300">
+                      <i className={icon}></i>
+                    </a>
                   ))}
                 </div>
               </div>
-
-              <Card className="shadow-lg">
-                <CardContent className="p-8">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Why Choose Lambana Solutions?</h4>
-                  <p className="text-gray-600 mb-4">We're committed to delivering excellence in every service we provide.</p>
-                  <div className="space-y-3 mb-6">
-                    {[
-                      "Expert team with years of experience",
-                      "Comprehensive service portfolio",
-                      "Competitive pricing",
-                      "Quick turnaround times", 
-                      "24/7 customer support"
-                    ].map((feature, index) => (
-                      <div key={index} className="flex items-center">
-                        <i className="fas fa-check text-green-500 mr-3"></i>
-                        <span className="text-gray-700">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* WhatsApp Chat Button */}
-                  <div className="border-t pt-6">
-                    <h5 className="font-semibold text-gray-900 mb-3">Need Immediate Help?</h5>
-                    <a 
-                      href="https://wa.me/+919986000219?text=Hello!%20I%20have%20a%20question%20about%20your%20services."
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition duration-300"
-                    >
-                      <i className="fab fa-whatsapp text-xl mr-2"></i>
-                      Chat on WhatsApp
-                    </a>
-                    <p className="text-sm text-gray-500 mt-2">Get instant responses to your queries</p>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
-
-            {/* Contact Form */}
-            <ContactForm />
+            
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+              <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>
