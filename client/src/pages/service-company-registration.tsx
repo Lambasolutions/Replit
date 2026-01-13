@@ -6,20 +6,8 @@ import Footer from "@/components/Footer";
 import { Link } from "wouter";
 
 export default function CompanyRegistration() {
-  const proprietorshipServices = [
-    { 
-      name: "Udyam Registration", 
-      price: "₹2,000", 
-      description: "MSME registration for small business benefits and government schemes." 
-    },
-    { 
-      name: "GST Registration", 
-      price: "₹2,000", 
-      description: "Mandatory tax registration for businesses exceeding turnover limits." 
-    }
-  ];
-
   const services = [
+    { name: "Proprietorship", description: "Simple single-owner business structure" },
     { name: "One Person Company (OPC)", description: "Corporate structure for single entrepreneurs" },
     { name: "Partnership Firm", description: "Multiple partner business registration" },
     { name: "Limited Liability Partnership (LLP)", description: "Flexible partnership with limited liability" },
@@ -52,33 +40,6 @@ export default function CompanyRegistration() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Proprietorship Section */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 border-b pb-4">Proprietorship Registration</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {proprietorshipServices.map((service, index) => (
-                <Card key={index} className="shadow-lg hover:shadow-xl transition duration-300 border-2 border-blue-50">
-                  <CardContent className="p-8">
-                    <div className="flex justify-between items-start mb-4">
-                      <h3 className="text-2xl font-bold text-gray-900">{service.name}</h3>
-                      <span className="text-2xl font-bold text-blue-600">{service.price}</span>
-                    </div>
-                    <p className="text-gray-600 mb-8">{service.description}</p>
-                    
-                    <div className="grid grid-cols-1 gap-3">
-                      <div className="flex gap-3">
-                        <Button className="flex-1 bg-blue-600 hover:bg-blue-700">Buy Now</Button>
-                        <Button variant="outline" className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-50">Add to Cart</Button>
-                      </div>
-                      <Button variant="secondary" className="w-full bg-gray-100 hover:bg-gray-200 text-gray-900">Enquire Now</Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 border-b pb-4">Other Registration Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="shadow-lg hover:shadow-xl transition duration-300">
