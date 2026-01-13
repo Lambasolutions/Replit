@@ -384,7 +384,7 @@ export default function Home() {
                 </div>
                 <p className="text-gray-600 mb-4">Complete tax and regulatory compliance solutions for businesses and individuals.</p>
                 <div className="space-y-2 mb-6">
-                  {["Income Tax Filing", "TDS Returns", "ROC & Statutory Filings", "Tax Audits"].map((service, index) => (
+                  {["Income Tax Filing", "TDS Returns", "ROC & Statutory Filings", "FSSAI Registration"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>

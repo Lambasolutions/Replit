@@ -13,6 +13,7 @@ export default function TaxCompliance() {
     { name: "Tax Audit", description: "Comprehensive tax audit services by qualified professionals." },
     { name: "Company Compliance", description: "ROC filings, board meetings, and statutory records maintenance." },
     { name: "Partnership Compliance", description: "Annual filings and regulatory requirements for partnership firms." },
+    { name: "FSSAI Registration", description: "Food safety license and registration for food-related business entities." },
     { name: "Business Licensing", description: "Assistance with various industry-specific trade licenses and renewals." }
   ];
 

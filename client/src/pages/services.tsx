@@ -65,6 +65,17 @@ export default function Services() {
       ]
     },
     {
+      title: "Tax & Business Compliance",
+      icon: "fas fa-file-invoice-dollar",
+      color: "bg-emerald-600",
+      services: [
+        { name: "Income Tax Filing", description: "Personal and business ITR filing" },
+        { name: "TDS Returns", description: "Quarterly compliance and certificates" },
+        { name: "ROC Filings", description: "Statutory compliance for companies" },
+        { name: "FSSAI Registration", description: "Food safety license for business" }
+      ]
+    },
+    {
       title: "E-commerce Solutions",
       icon: "fas fa-shopping-cart",
       color: "bg-indigo-500",
