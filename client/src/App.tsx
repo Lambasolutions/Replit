@@ -14,6 +14,7 @@ import Ecommerce from "@/pages/service-ecommerce";
 import ImportExport from "@/pages/service-import-export";
 import ITSolutions from "@/pages/service-it-solutions";
 import BPOServices from "@/pages/service-bpo-services";
+import TaxCompliance from "@/pages/service-tax-compliance";
 import NotFound from "@/pages/not-found";
 import AIChat from "@/components/AIChat";
 
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/services/import-export" component={ImportExport} />
       <Route path="/services/it-solutions" component={ITSolutions} />
       <Route path="/services/bpo-services" component={BPOServices} />
+      <Route path="/services/tax-compliance" component={TaxCompliance} />
       <Route component={NotFound} />
     </Switch>
   );

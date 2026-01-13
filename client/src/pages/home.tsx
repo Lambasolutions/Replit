@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import textileImage from "@assets/generated_images/professional_textile_and_handloom_fabrics.png";
 import importExportImage from "@assets/generated_images/international_shipping_and_global_trade.png";
 import bpoImage from "@assets/generated_images/professional_bpo_customer_support_team.png";
+import taxImage from "@assets/generated_images/professional_tax_and_compliance_consulting.png";
 
 export default function Home() {
   useEffect(() => {
@@ -359,7 +360,38 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <Link href="/services/ecommerce-solutions">
+                <Link href="/services/tax-compliance">
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Tax & Compliance */}
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+              <div className="relative">
+                <img 
+                  src={taxImage}
+                  alt="Tax and compliance services professional" 
+                  className="w-full h-48 object-cover rounded-t-xl"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <i className="fas fa-file-invoice-dollar text-2xl text-primary mr-3"></i>
+                  <h3 className="text-xl font-bold">Tax & Business Compliance</h3>
+                </div>
+                <p className="text-gray-600 mb-4">Complete tax and regulatory compliance solutions for businesses and individuals.</p>
+                <div className="space-y-2 mb-6">
+                  {["Income Tax Filing", "TDS Returns", "ROC & Statutory Filings", "Tax Audits"].map((service, index) => (
+                    <div key={index} className="flex items-center text-sm text-gray-600">
+                      <i className="fas fa-check text-green-500 mr-2"></i>
+                      <span>{service}</span>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/services/tax-compliance">
                   <Button className="w-full bg-primary text-white hover:bg-primary/90">
                     Learn More <i className="fas fa-arrow-right ml-2"></i>
                   </Button>

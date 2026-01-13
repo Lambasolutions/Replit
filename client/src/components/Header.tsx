@@ -39,6 +39,7 @@ export default function Header() {
     { name: "Import & Export Services", href: "/services/import-export" },
     { name: "IT Solutions", href: "/services/it-solutions" },
     { name: "BPO Services", href: "/services/bpo-services" },
+    { name: "Tax & Business Compliance", href: "/services/tax-compliance" },
   ];
 
   return (
