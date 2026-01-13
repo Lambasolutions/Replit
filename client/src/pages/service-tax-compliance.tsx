@@ -8,6 +8,7 @@ import taxImage from "@assets/generated_images/professional_tax_and_compliance_c
 
 export default function TaxCompliance() {
   const services = [
+    { name: "GST Registration & Filing", description: "Complete GST registration, monthly/quarterly return filing (GSTR-1, 3B, 9), and reconciliation." },
     { name: "Income Tax Filing", description: "Personal and business income tax returns (ITR) filing services." },
     { name: "TDS Compliance", description: "Quarterly TDS return filing and certificate issuance." },
     { name: "Tax Audit", description: "Comprehensive tax audit services by qualified professionals." },

@@ -69,6 +69,7 @@ export default function Services() {
       icon: "fas fa-file-invoice-dollar",
       color: "bg-emerald-600",
       services: [
+        { name: "GST Services", description: "Registration and return filing" },
         { name: "Income Tax Filing", description: "Personal and business ITR filing" },
         { name: "TDS Returns", description: "Quarterly compliance and certificates" },
         { name: "ROC Filings", description: "Statutory compliance for companies" },
