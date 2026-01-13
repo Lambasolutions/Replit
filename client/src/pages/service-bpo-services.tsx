@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import bpoHeroImage from "@assets/generated_images/professional_bpo_customer_support_team.png";
 
 export default function BPOServices() {
   const services = [
@@ -30,10 +31,21 @@ export default function BPOServices() {
               ← Back to Services
             </button>
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">BPO Services</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl">
-            Reliable business process outsourcing solutions to enhance your operational efficiency.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">BPO Services</h1>
+              <p className="text-xl md:text-2xl mb-8">
+                Reliable business process outsourcing solutions to enhance your operational efficiency.
+              </p>
+            </div>
+            <div className="hidden lg:block">
+              <img 
+                src={bpoHeroImage}
+                alt="BPO Services"
+                className="rounded-2xl shadow-2xl border-4 border-white/20"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import heroImage from "@assets/generated_images/financial_growth_and_banking_concepts.png";
 
 export default function Financial() {
   const services = [
@@ -30,10 +31,21 @@ export default function Financial() {
               ← Back to Services
             </button>
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Financial Services</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl">
-            Comprehensive financial solutions and lending options for individuals and businesses.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">Financial Services</h1>
+              <p className="text-xl md:text-2xl mb-8">
+                Comprehensive financial solutions and lending options for individuals and businesses.
+              </p>
+            </div>
+            <div className="hidden lg:block">
+              <img 
+                src={heroImage}
+                alt="Financial Services"
+                className="rounded-2xl shadow-2xl border-4 border-white/20"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

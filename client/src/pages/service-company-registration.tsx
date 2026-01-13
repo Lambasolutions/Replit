@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import heroImage from "@assets/generated_images/modern_office_building_and_business_registration_concepts.png";
 
 export default function CompanyRegistration() {
   const services = [
@@ -31,10 +32,21 @@ export default function CompanyRegistration() {
               ← Back to Services
             </button>
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Company Registration</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl">
-            Comprehensive business registration services for all types of corporate structures.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">Company Registration</h1>
+              <p className="text-xl md:text-2xl mb-8">
+                Comprehensive business registration services for all types of corporate structures.
+              </p>
+            </div>
+            <div className="hidden lg:block">
+              <img 
+                src={heroImage}
+                alt="Company Registration"
+                className="rounded-2xl shadow-2xl border-4 border-white/20"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

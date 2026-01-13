@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import heroImage from "@assets/generated_images/community_service_center_and_public_services_concept.png";
 
 export default function CSC() {
   const services = [
@@ -23,10 +24,21 @@ export default function CSC() {
               ← Back to Services
             </button>
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">CSC Services</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl">
-            Government-approved services for citizen documentation and banking needs.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">CSC Services</h1>
+              <p className="text-xl md:text-2xl mb-8">
+                Government-approved services for citizen documentation and banking needs.
+              </p>
+            </div>
+            <div className="hidden lg:block">
+              <img 
+                src={heroImage}
+                alt="CSC Services"
+                className="rounded-2xl shadow-2xl border-4 border-white/20"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

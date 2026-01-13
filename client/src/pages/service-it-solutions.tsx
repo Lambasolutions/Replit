@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import heroImage from "@assets/generated_images/modern_it_workspace_and_digital_code.png";
 
 export default function ITSolutions() {
   const services = [
@@ -30,10 +31,21 @@ export default function ITSolutions() {
               ← Back to Services
             </button>
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">IT Solutions</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl">
-            Empowering your business with cutting-edge technology and innovative digital solutions.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">IT Solutions</h1>
+              <p className="text-xl md:text-2xl mb-8">
+                Empowering your business with cutting-edge technology and innovative digital solutions.
+              </p>
+            </div>
+            <div className="hidden lg:block">
+              <img 
+                src={heroImage}
+                alt="IT Solutions"
+                className="rounded-2xl shadow-2xl border-4 border-white/20"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

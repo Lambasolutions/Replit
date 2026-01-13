@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import heroImage from "@assets/generated_images/e-commerce_and_global_logistics_concepts.png";
 import agriImage from "@assets/generated_images/fresh_agricultural_products_and_farm_produce.png";
 import textileImage from "@assets/generated_images/professional_textile_and_handloom_fabrics.png";
 
@@ -46,10 +47,21 @@ export default function Ecommerce() {
               ← Back to Services
             </button>
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">E-commerce Solutions</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl">
-            Complete e-commerce solutions for products and export services.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">E-commerce Solutions</h1>
+              <p className="text-xl md:text-2xl mb-8">
+                Complete e-commerce solutions for products and export services.
+              </p>
+            </div>
+            <div className="hidden lg:block">
+              <img 
+                src={heroImage}
+                alt="E-commerce Solutions"
+                className="rounded-2xl shadow-2xl border-4 border-white/20"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
