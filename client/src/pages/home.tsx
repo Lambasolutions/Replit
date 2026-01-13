@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import textileImage from "@assets/generated_images/professional_textile_and_handloom_fabrics.png";
 import importExportImage from "@assets/generated_images/international_shipping_and_global_trade.png";
+import bpoImage from "@assets/generated_images/professional_bpo_customer_support_team.png";
 
 export default function Home() {
   useEffect(() => {
@@ -279,8 +280,8 @@ export default function Home() {
             <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1549923746-c50264f39a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
-                  alt="BPO services customer support" 
+                  src={bpoImage} 
+                  alt="BPO services customer support team" 
                   className="w-full h-48 object-cover rounded-t-xl"
                 />
               </div>
