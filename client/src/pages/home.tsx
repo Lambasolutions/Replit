@@ -59,28 +59,29 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section id="home" className="relative bg-gradient-to-r from-primary to-secondary text-white">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+      <section id="home" className="relative text-white overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-10000 hover:scale-110"
           style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080')"
           }}
         ></div>
+        {/* Enhanced Dark Overlay for better text visibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
               Your Trusted Partner for<br />
-              <span className="text-accent">Complete Business Solutions</span>
+              <span className="text-accent drop-shadow-[0_2px_5px_rgba(0,0,0,0.5)]">Complete Business Solutions</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-[0_1px_5px_rgba(0,0,0,0.8)] font-medium">
               From government services to premium products, Lambana Solutions provides comprehensive business support across multiple industries with excellence and trust.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-accent text-white hover:bg-accent/90 px-8 py-3 text-lg"
+                className="bg-accent text-white hover:bg-accent/90 px-8 py-3 text-lg shadow-xl"
                 onClick={() => scrollToSection('services')}
               >
                 <i className="fas fa-search mr-2"></i>
@@ -89,7 +90,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 variant="secondary" 
-                className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg"
+                className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg shadow-xl"
                 onClick={() => scrollToSection('contact')}
               >
                 <i className="fas fa-phone mr-2"></i>
