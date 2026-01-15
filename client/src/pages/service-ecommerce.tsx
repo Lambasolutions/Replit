@@ -67,9 +67,9 @@ export default function Ecommerce() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+              <Card key={index} className="shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border-t-4 border-indigo-600">
                 <div className="relative h-48 overflow-hidden bg-gray-200">
                   <img 
                     src={service.image}
@@ -82,11 +82,10 @@ export default function Ecommerce() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.name}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <Button 
-                    size="lg"
-                    className="w-full bg-indigo-600 text-white hover:bg-indigo-700"
-                    data-testid={`button-service-${service.name.toLowerCase().replace(/\s+/g, '-')}`}
+                    variant="outline"
+                    className="w-full border-indigo-600 text-indigo-700 hover:bg-indigo-50"
                   >
-                    Learn More
+                    Get Quote
                   </Button>
                 </CardContent>
               </Card>

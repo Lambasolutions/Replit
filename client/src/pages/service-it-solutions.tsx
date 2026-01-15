@@ -51,17 +51,17 @@ export default function ITSolutions() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="shadow-lg hover:shadow-xl transition duration-300">
+              <Card key={index} className="shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-blue-700">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.name}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <Button 
-                    size="lg"
-                    className="w-full bg-blue-700 text-white hover:bg-blue-800"
+                    variant="outline"
+                    className="w-full border-blue-700 text-blue-800 hover:bg-blue-50"
                   >
-                    Learn More
+                    Get Quote
                   </Button>
                 </CardContent>
               </Card>
