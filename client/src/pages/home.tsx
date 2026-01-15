@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import textileImage from "@assets/generated_images/professional_textile_and_handloom_fabrics.png";
 import importExportImage from "@assets/generated_images/international_shipping_and_global_trade.png";
 import bpoImage from "@assets/generated_images/professional_bpo_customer_support_team.png";
@@ -110,27 +109,6 @@ export default function Home() {
         
         {/* Decorative elements for class */}
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
-      </section>
-        
-        {/* Service Category Quick Links */}
-        <div className="relative bg-white/10 backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto px-4 py-8">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {[
-                { icon: "fas fa-landmark", text: "Government & Citizen Services" },
-                { icon: "fas fa-chart-line", text: "Financial & Legal Solutions" },
-                { icon: "fas fa-leaf", text: "Premium Food Products" },
-                { icon: "fas fa-tshirt", text: "Textiles" },
-                { icon: "fas fa-ship", text: "Import & Export Services" }
-              ].map((item, index) => (
-                <div key={index} className="text-center p-4 rounded-lg hover:bg-white/20 transition duration-300 cursor-pointer">
-                  <i className={`${item.icon} text-2xl mb-2`}></i>
-                  <p className="text-sm font-medium">{item.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Statistics Section */}
