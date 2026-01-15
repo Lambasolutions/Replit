@@ -154,7 +154,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Government & Citizen Services */}
-            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-blue-600">
               <div className="relative">
                 <img 
                   src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" 
@@ -169,7 +169,7 @@ export default function Home() {
                 </div>
                 <p className="text-gray-600 mb-4">Complete business registration, GST services, Digital Signature Certificates, and comprehensive public service solutions.</p>
                 <div className="space-y-2 mb-6">
-                  {["Company Registration (All Types)", "GST Services", "Digital Signature Certificate (DSC)", "CSC Centre Services"].map((service, index) => (
+                  {["Company Registration", "GST Services", "Digital Signature (DSC)", "CSC Centre Services"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
@@ -178,14 +178,14 @@ export default function Home() {
                 </div>
                 <Link href="/services/company-registration">
                   <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                    Get Quote <i className="fas fa-arrow-right ml-2"></i>
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
             {/* Financial & Accounting Services */}
-            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-yellow-600">
               <div className="relative">
                 <img 
                   src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" 
@@ -200,7 +200,7 @@ export default function Home() {
                 </div>
                 <p className="text-gray-600 mb-4">Professional financial solutions including loans, bookkeeping, project reports, and CA-related services.</p>
                 <div className="space-y-2 mb-6">
-                  {["Loans", "Bookkeeping Services", "Project Report Services", "CA-Related Services"].map((service, index) => (
+                  {["Loans", "Bookkeeping Services", "Project Reports", "CA-Related Services"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
@@ -209,14 +209,14 @@ export default function Home() {
                 </div>
                 <Link href="/services/financial-services">
                   <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                    Get Quote <i className="fas fa-arrow-right ml-2"></i>
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
             {/* Legal Services */}
-            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-red-600">
               <div className="relative">
                 <img 
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" 
@@ -231,7 +231,7 @@ export default function Home() {
                 </div>
                 <p className="text-gray-600 mb-4">Complete legal documentation support including digital stamping, rental agreements, and business contracts.</p>
                 <div className="space-y-2 mb-6">
-                  {["Digital Stamping", "Rental Agreement Drafting", "Legal Documentation", "Business Agreements"].map((service, index) => (
+                  {["Digital Stamping", "Rental Agreements", "Legal Documentation", "Business Agreements"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
@@ -240,14 +240,14 @@ export default function Home() {
                 </div>
                 <Link href="/services/legal-services">
                   <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                    Get Quote <i className="fas fa-arrow-right ml-2"></i>
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
             {/* IT Solutions */}
-            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-blue-700">
               <div className="relative">
                 <img 
                   src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
@@ -262,7 +262,7 @@ export default function Home() {
                 </div>
                 <p className="text-gray-600 mb-4">Cutting-edge technology services and digital transformation for modern enterprises.</p>
                 <div className="space-y-2 mb-6">
-                  {["Software Development", "Cloud Solutions", "Cybersecurity", "Mobile App Development"].map((service, index) => (
+                  {["Software Development", "Cloud Solutions", "Cybersecurity", "Mobile Development"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
@@ -271,14 +271,14 @@ export default function Home() {
                 </div>
                 <Link href="/services/it-solutions">
                   <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                    Get Quote <i className="fas fa-arrow-right ml-2"></i>
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
             {/* BPO Services */}
-            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-slate-700">
               <div className="relative">
                 <img 
                   src={bpoImage} 
@@ -302,14 +302,14 @@ export default function Home() {
                 </div>
                 <Link href="/services/bpo-services">
                   <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                    Get Quote <i className="fas fa-arrow-right ml-2"></i>
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
             {/* Foods & Agri-Products */}
-            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-green-600">
               <div className="relative">
                 <img 
                   src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" 
@@ -324,21 +324,23 @@ export default function Home() {
                 </div>
                 <p className="text-gray-600 mb-4">Premium South Indian pickles, snacks, ready-to-eat meals, freeze-dried foods, and dairy products with authentic flavors.</p>
                 <div className="space-y-2 mb-6">
-                  {["South Indian Pickles & Snacks", "Ready-to-Eat Meals", "Freeze-Dried & Dehydrated Foods", "Dairy Products"].map((service, index) => (
+                  {["Pickles & Snacks", "Ready-to-Eat Meals", "Freeze-Dried Foods", "Dairy Products"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
                     </div>
                   ))}
                 </div>
-                <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                  Learn More <i className="fas fa-arrow-right ml-2"></i>
-                </Button>
+                <Link href="/services/ecommerce-solutions">
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                    Get Quote <i className="fas fa-arrow-right ml-2"></i>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
             {/* E-commerce Solutions */}
-            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-600">
               <div className="relative">
                 <img 
                   src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
@@ -353,23 +355,23 @@ export default function Home() {
                 </div>
                 <p className="text-gray-600 mb-4">Complete online marketplace solutions for agri products, food items, and textiles with integrated payment systems.</p>
                 <div className="space-y-2 mb-6">
-                  {["Online Product Catalog", "Payment Gateway Integration", "Order Management", "Customer Support"].map((service, index) => (
+                  {["Online Catalog", "Payment Gateways", "Order Management", "Customer Support"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
                     </div>
                   ))}
                 </div>
-                <Link href="/services/tax-compliance">
+                <Link href="/services/ecommerce-solutions">
                   <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                    Get Quote <i className="fas fa-arrow-right ml-2"></i>
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
             {/* Tax & Compliance */}
-            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-emerald-600">
               <div className="relative">
                 <img 
                   src={taxImage}
@@ -393,14 +395,14 @@ export default function Home() {
                 </div>
                 <Link href="/services/tax-compliance">
                   <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                    Get Quote <i className="fas fa-arrow-right ml-2"></i>
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
             {/* Textiles */}
-            <Card className="shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+            <Card className="shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-600">
               <div className="relative">
                 <img 
                   src={textileImage}
@@ -415,7 +417,7 @@ export default function Home() {
                 </div>
                 <p className="text-gray-600 mb-4">Premium Khadi, Handloom, and Machine Loom textiles with traditional craftsmanship and export services.</p>
                 <div className="space-y-2 mb-6">
-                  {["Khadi Products & Sarees", "Handloom Collections", "Machine Loom Textiles", "Custom Textile Orders"].map((service, index) => (
+                  {["Khadi Products", "Handloom Collections", "Machine Loom", "Custom Orders"].map((service, index) => (
                     <div key={index} className="flex items-center text-sm text-gray-600">
                       <i className="fas fa-check text-green-500 mr-2"></i>
                       <span>{service}</span>
@@ -424,7 +426,7 @@ export default function Home() {
                 </div>
                 <Link href="/services/ecommerce-solutions">
                   <Button className="w-full bg-primary text-white hover:bg-primary/90">
-                    Learn More <i className="fas fa-arrow-right ml-2"></i>
+                    Get Quote <i className="fas fa-arrow-right ml-2"></i>
                   </Button>
                 </Link>
               </CardContent>
@@ -433,7 +435,7 @@ export default function Home() {
 
           {/* Import & Export - Full Width */}
           <div className="mt-8">
-            <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-xl shadow-lg overflow-hidden border-t-4 border-blue-600">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="p-8 lg:p-12">
                   <div className="flex items-center mb-6">
@@ -455,7 +457,7 @@ export default function Home() {
                   </div>
                   <Link href="/services/import-export">
                     <Button className="bg-accent text-white hover:bg-accent/90 px-8 py-3 font-semibold">
-                      Learn More <i className="fas fa-arrow-right ml-2"></i>
+                      Get Quote <i className="fas fa-arrow-right ml-2"></i>
                     </Button>
                   </Link>
                 </div>
@@ -480,7 +482,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-accent text-white hover:bg-accent/90 px-8 py-4 text-lg font-semibold">
               <i className="fas fa-calendar mr-2"></i>
-              Schedule Consultation
+              Get Free Quote
             </Button>
             <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
               <i className="fas fa-download mr-2"></i>
