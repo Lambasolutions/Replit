@@ -70,17 +70,17 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
               Your Trusted Partner for<br />
-              <span className="text-accent">Complete Business Solutions</span>
+              <span className="text-accent drop-shadow-md">Complete Business Solutions</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto drop-shadow-md opacity-95">
               From government services to premium products, Lambana Solutions provides comprehensive business support across multiple industries with excellence and trust.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 size="lg" 
-                className="bg-accent text-white hover:bg-accent/90 px-8 py-3 text-lg"
+                className="bg-accent text-white hover:bg-accent/90 px-10 py-4 text-xl font-bold rounded-xl shadow-[0_10px_20px_rgba(245,158,11,0.3)] hover:shadow-[0_15px_30px_rgba(245,158,11,0.4)] transition-all duration-300 transform hover:-translate-y-1"
                 onClick={() => scrollToSection('services')}
               >
                 <i className="fas fa-search mr-2"></i>
@@ -89,7 +89,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 variant="secondary" 
-                className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg"
+                className="bg-white text-primary hover:bg-gray-50 px-10 py-4 text-xl font-bold rounded-xl shadow-[0_10px_20px_rgba(255,255,255,0.1)] hover:shadow-[0_15px_30px_rgba(255,255,255,0.2)] transition-all duration-300 transform hover:-translate-y-1 border-2 border-transparent hover:border-white/50"
                 onClick={() => scrollToSection('contact')}
               >
                 <i className="fas fa-phone mr-2"></i>
