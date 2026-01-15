@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import heroImage from "@assets/generated_images/clean_state_services_icon_grid_image.png";
+import heroImage from "@assets/generated_images/all_state_services_hero_image.png";
 
 const states = [
   "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
@@ -27,22 +27,22 @@ export default function AllStates() {
       </Helmet>
       <Header />
       
-      <section className="relative h-[300px] flex items-center justify-center text-white overflow-hidden">
-        <div className="absolute inset-0 bg-primary/80 z-10"></div>
+      <section className="relative h-[400px] flex items-center justify-center text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
         <img 
           src={heroImage} 
-          alt="Professional state services" 
+          alt="Indian government and state services" 
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Link href="/services">
-            <Button variant="outline" className="text-white border-white hover:bg-white hover:text-primary mb-6 group transition-all duration-300">
+            <Button variant="ghost" className="text-white hover:bg-white/20 mb-6 group">
               <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
               Back to Services
             </Button>
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">All State Services</h1>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md opacity-90 font-medium">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">All State Services</h1>
+          <p className="text-xl max-w-3xl mx-auto drop-shadow-md opacity-90">
             Dedicated support for citizen and business services across every state and union territory in India.
           </p>
         </div>
