@@ -58,7 +58,7 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section id="home" className="relative text-white overflow-hidden min-h-[80vh] flex items-center">
+      <section id="home" className="relative text-gray-900 overflow-hidden min-h-[85vh] flex items-center bg-gray-50">
         <div 
           className="absolute inset-0 bg-cover bg-center transition-transform duration-10000"
           style={{
@@ -66,29 +66,28 @@ export default function Home() {
           }}
         ></div>
         
-        {/* Modern Frosted Glass Overlay - Light & Classy */}
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40"></div>
+        {/* Bright, Minimalist Overlay for a Professional Look */}
+        <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]"></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="inline-block px-4 py-1.5 mb-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-sm font-semibold tracking-wider uppercase text-accent animate-fade-in">
+        <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-4xl bg-white/80 backdrop-blur-xl p-10 md:p-16 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/50 animate-in fade-in slide-in-from-left-10 duration-1000">
+            <div className="inline-block px-4 py-1.5 mb-8 bg-primary/10 rounded-full text-sm font-bold tracking-widest uppercase text-primary border border-primary/20">
               Professional Business Excellence
             </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight">
-              <span className="block drop-shadow-2xl">Your Trusted Partner for</span>
-              <span className="text-accent drop-shadow-lg relative inline-block">
+            <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight leading-[1.1] text-gray-900">
+              Your Trusted Partner for<br />
+              <span className="text-primary relative inline-block">
                 Complete Business Solutions
-                <span className="absolute -bottom-2 left-0 w-full h-1 bg-accent/50 rounded-full"></span>
+                <span className="absolute -bottom-2 left-0 w-1/2 h-1.5 bg-accent rounded-full"></span>
               </span>
             </h1>
-            <p className="text-xl md:text-3xl mb-12 max-w-4xl mx-auto font-light leading-relaxed text-gray-100 drop-shadow-md">
+            <p className="text-xl md:text-2xl mb-10 text-gray-700 font-medium leading-relaxed">
               From government services to premium products, Lambana Solutions provides comprehensive business support across multiple industries with excellence and trust.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-6">
               <Button 
                 size="lg" 
-                className="bg-accent text-white hover:bg-accent/90 px-10 py-4 text-xl shadow-[0_0_20px_rgba(255,191,0,0.3)] transition-all hover:scale-105 rounded-xl font-bold"
+                className="bg-primary text-white hover:bg-primary/90 px-10 py-4 text-xl shadow-xl transition-all hover:scale-105 rounded-xl font-bold h-auto"
                 onClick={() => scrollToSection('services')}
               >
                 <i className="fas fa-search mr-3"></i>
@@ -97,7 +96,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="bg-white/10 backdrop-blur-md border-2 border-white text-white hover:bg-white hover:text-primary px-10 py-4 text-xl transition-all hover:scale-105 rounded-xl font-bold"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-10 py-4 text-xl transition-all hover:scale-105 rounded-xl font-bold h-auto"
                 onClick={() => scrollToSection('contact')}
               >
                 <i className="fas fa-phone mr-3"></i>
@@ -106,9 +105,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
-        {/* Decorative elements for class */}
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
       {/* Statistics Section */}
