@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import textileImage from "@assets/generated_images/professional_textile_and_handloom_fabrics.png";
 import importExportImage from "@assets/generated_images/international_shipping_and_global_trade.png";
 import bpoImage from "@assets/generated_images/professional_bpo_customer_support_team.png";
@@ -58,50 +59,62 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section id="home" className="relative text-gray-900 overflow-hidden min-h-[85vh] flex items-center bg-gray-50">
+      <section id="home" className="relative bg-gradient-to-r from-primary to-secondary text-white">
+        <div className="absolute inset-0 bg-black opacity-40"></div>
         <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-10000"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080')"
           }}
         ></div>
         
-        {/* Bright, Minimalist Overlay for a Professional Look */}
-        <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]"></div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-4xl bg-white/80 backdrop-blur-xl p-10 md:p-16 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/50 animate-in fade-in slide-in-from-left-10 duration-1000">
-            <div className="inline-block px-4 py-1.5 mb-8 bg-primary/10 rounded-full text-sm font-bold tracking-widest uppercase text-primary border border-primary/20">
-              Professional Business Excellence
-            </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight leading-[1.1] text-gray-900">
+        <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Your Trusted Partner for<br />
-              <span className="text-primary relative inline-block">
-                Complete Business Solutions
-                <span className="absolute -bottom-2 left-0 w-1/2 h-1.5 bg-accent rounded-full"></span>
-              </span>
+              <span className="text-accent">Complete Business Solutions</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-10 text-gray-700 font-medium leading-relaxed">
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               From government services to premium products, Lambana Solutions provides comprehensive business support across multiple industries with excellence and trust.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-primary text-white hover:bg-primary/90 px-10 py-4 text-xl shadow-xl transition-all hover:scale-105 rounded-xl font-bold h-auto"
+                className="bg-accent text-white hover:bg-accent/90 px-8 py-3 text-lg"
                 onClick={() => scrollToSection('services')}
               >
-                <i className="fas fa-search mr-3"></i>
+                <i className="fas fa-search mr-2"></i>
                 Explore Our Services
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-10 py-4 text-xl transition-all hover:scale-105 rounded-xl font-bold h-auto"
+                variant="secondary" 
+                className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg"
                 onClick={() => scrollToSection('contact')}
               >
-                <i className="fas fa-phone mr-3"></i>
+                <i className="fas fa-phone mr-2"></i>
                 Contact Us Today
               </Button>
+            </div>
+          </div>
+        </div>
+        
+        {/* Service Category Quick Links */}
+        <div className="relative bg-white/10 backdrop-blur-sm">
+          <div className="max-w-7xl mx-auto px-4 py-8">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              {[
+                { icon: "fas fa-landmark", text: "Government & Citizen Services" },
+                { icon: "fas fa-chart-line", text: "Financial & Legal Solutions" },
+                { icon: "fas fa-leaf", text: "Premium Food Products" },
+                { icon: "fas fa-tshirt", text: "Textiles" },
+                { icon: "fas fa-ship", text: "Import & Export Services" }
+              ].map((item, index) => (
+                <div key={index} className="text-center p-4 rounded-lg hover:bg-white/20 transition duration-300 cursor-pointer">
+                  <i className={`${item.icon} text-2xl mb-2`}></i>
+                  <p className="text-sm font-medium">{item.text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
