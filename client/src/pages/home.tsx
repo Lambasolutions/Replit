@@ -59,40 +59,38 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section id="home" className="relative bg-gradient-to-r from-primary to-secondary text-white">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+      <section id="home" className="relative bg-black overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-1000"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080')",
+            filter: "brightness(0.35) contrast(1.1)"
           }}
         ></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-40">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight text-white drop-shadow-2xl">
               Your Trusted Partner for<br />
-              <span className="text-accent">Complete Business Solutions</span>
+              <span className="text-[#FFD700] drop-shadow-[0_2px_10px_rgba(255,215,0,0.5)]">Complete Business Solutions</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              From government services to premium products, Lambana Solutions provides comprehensive business support across multiple industries with excellence and trust.
+            <p className="text-xl md:text-3xl mb-12 max-w-3xl mx-auto text-gray-100 font-medium leading-relaxed drop-shadow-lg">
+              Empowering your growth with expert government compliance, financial excellence, and premium product sourcing.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 size="lg" 
-                className="bg-accent text-white hover:bg-accent/90 px-8 py-3 text-lg"
+                className="bg-[#FFD700] text-black hover:bg-[#FFC800] px-10 py-6 text-xl font-bold shadow-[0_0_20px_rgba(255,215,0,0.3)] transition-all hover:scale-105"
                 onClick={() => scrollToSection('services')}
               >
-                <i className="fas fa-search mr-2"></i>
                 Explore Our Services
               </Button>
               <Button 
                 size="lg" 
-                variant="secondary" 
-                className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg"
+                variant="outline" 
+                className="bg-white/10 backdrop-blur-md border-2 border-white text-white hover:bg-white hover:text-black px-10 py-6 text-xl font-bold transition-all hover:scale-105"
                 onClick={() => scrollToSection('contact')}
               >
-                <i className="fas fa-phone mr-2"></i>
                 Contact Us Today
               </Button>
             </div>
@@ -100,19 +98,19 @@ export default function Home() {
         </div>
         
         {/* Service Category Quick Links */}
-        <div className="relative bg-white/10 backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto px-4 py-8">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div className="relative bg-black/60 backdrop-blur-md border-t border-white/10">
+          <div className="max-w-7xl mx-auto px-4 py-10">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
               {[
-                { icon: "fas fa-landmark", text: "Government & Citizen Services" },
-                { icon: "fas fa-chart-line", text: "Financial & Legal Solutions" },
-                { icon: "fas fa-leaf", text: "Premium Food Products" },
-                { icon: "fas fa-tshirt", text: "Textiles" },
-                { icon: "fas fa-ship", text: "Import & Export Services" }
+                { icon: "fas fa-landmark", text: "Government & Citizen Services", color: "text-blue-400" },
+                { icon: "fas fa-chart-line", text: "Financial & Legal Solutions", color: "text-yellow-400" },
+                { icon: "fas fa-leaf", text: "Premium Food Products", color: "text-green-400" },
+                { icon: "fas fa-tshirt", text: "Textiles", color: "text-purple-400" },
+                { icon: "fas fa-ship", text: "Import & Export Services", color: "text-indigo-400" }
               ].map((item, index) => (
-                <div key={index} className="text-center p-4 rounded-lg hover:bg-white/20 transition duration-300 cursor-pointer">
-                  <i className={`${item.icon} text-2xl mb-2`}></i>
-                  <p className="text-sm font-medium">{item.text}</p>
+                <div key={index} className="text-center p-6 rounded-xl hover:bg-white/10 transition duration-300 cursor-pointer group">
+                  <i className={`${item.icon} text-3xl mb-3 ${item.color} group-hover:scale-110 transition-transform`}></i>
+                  <p className="text-sm font-bold text-white uppercase tracking-wider">{item.text}</p>
                 </div>
               ))}
             </div>
