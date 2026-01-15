@@ -15,6 +15,7 @@ import ImportExport from "@/pages/service-import-export";
 import ITSolutions from "@/pages/service-it-solutions";
 import BPOServices from "@/pages/service-bpo-services";
 import TaxCompliance from "@/pages/service-tax-compliance";
+import AllStates from "@/pages/all-states";
 import NotFound from "@/pages/not-found";
 import AIChat from "@/components/AIChat";
 
@@ -33,6 +34,7 @@ function Router() {
       <Route path="/services/it-solutions" component={ITSolutions} />
       <Route path="/services/bpo-services" component={BPOServices} />
       <Route path="/services/tax-compliance" component={TaxCompliance} />
+      <Route path="/services/all-states" component={AllStates} />
       <Route component={NotFound} />
     </Switch>
   );

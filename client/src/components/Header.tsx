@@ -78,6 +78,13 @@ export default function Header() {
                   </button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-64">
+                  <Link href="/services/all-states">
+                    <DropdownMenuItem className="cursor-pointer">
+                      <i className="fas fa-map-marker-alt mr-2"></i>
+                      All State Services
+                    </DropdownMenuItem>
+                  </Link>
+                  <DropdownMenuSeparator />
                   <Link href="/services">
                     <DropdownMenuItem className="cursor-pointer">
                       <i className="fas fa-th-large mr-2"></i>
