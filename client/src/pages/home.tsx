@@ -59,46 +59,58 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section id="home" className="relative text-white overflow-hidden">
+      <section id="home" className="relative text-white overflow-hidden min-h-[80vh] flex items-center">
         <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-10000 hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-10000"
           style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080')"
           }}
         ></div>
-        {/* Enhanced Dark Overlay for better text visibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
+        {/* Modern Frosted Glass Overlay - Light & Classy */}
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              Your Trusted Partner for<br />
-              <span className="text-accent drop-shadow-[0_2px_5px_rgba(0,0,0,0.5)]">Complete Business Solutions</span>
+            <div className="inline-block px-4 py-1.5 mb-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-sm font-semibold tracking-wider uppercase text-accent animate-fade-in">
+              Professional Business Excellence
+            </div>
+            <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight">
+              <span className="block drop-shadow-2xl">Your Trusted Partner for</span>
+              <span className="text-accent drop-shadow-lg relative inline-block">
+                Complete Business Solutions
+                <span className="absolute -bottom-2 left-0 w-full h-1 bg-accent/50 rounded-full"></span>
+              </span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-[0_1px_5px_rgba(0,0,0,0.8)] font-medium">
+            <p className="text-xl md:text-3xl mb-12 max-w-4xl mx-auto font-light leading-relaxed text-gray-100 drop-shadow-md">
               From government services to premium products, Lambana Solutions provides comprehensive business support across multiple industries with excellence and trust.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button 
                 size="lg" 
-                className="bg-accent text-white hover:bg-accent/90 px-8 py-3 text-lg shadow-xl"
+                className="bg-accent text-white hover:bg-accent/90 px-10 py-4 text-xl shadow-[0_0_20px_rgba(255,191,0,0.3)] transition-all hover:scale-105 rounded-xl font-bold"
                 onClick={() => scrollToSection('services')}
               >
-                <i className="fas fa-search mr-2"></i>
+                <i className="fas fa-search mr-3"></i>
                 Explore Our Services
               </Button>
               <Button 
                 size="lg" 
-                variant="secondary" 
-                className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg shadow-xl"
+                variant="outline" 
+                className="bg-white/10 backdrop-blur-md border-2 border-white text-white hover:bg-white hover:text-primary px-10 py-4 text-xl transition-all hover:scale-105 rounded-xl font-bold"
                 onClick={() => scrollToSection('contact')}
               >
-                <i className="fas fa-phone mr-2"></i>
+                <i className="fas fa-phone mr-3"></i>
                 Contact Us Today
               </Button>
             </div>
           </div>
         </div>
+        
+        {/* Decorative elements for class */}
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+      </section>
         
         {/* Service Category Quick Links */}
         <div className="relative bg-white/10 backdrop-blur-sm">
