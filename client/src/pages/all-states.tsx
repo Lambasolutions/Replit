@@ -27,12 +27,12 @@ export default function AllStates() {
       </Helmet>
       <Header />
       
-      <section className="relative h-[300px] md:h-[450px] flex items-center justify-center text-white overflow-hidden bg-gray-900">
+      <section className="relative h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center text-white overflow-hidden bg-gray-900">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
           src={heroImage} 
           alt="Indian government and state services" 
-          className="absolute inset-0 w-full h-full object-contain z-0 p-4 md:p-8"
+          className="absolute inset-0 w-full h-full object-cover object-[center_20%] md:object-[center_15%] z-0"
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Link href="/services">
