@@ -21,7 +21,7 @@ const states = [
 // Mapping of state names to representative images
 const stateImages: Record<string, string> = {
   "Andhra Pradesh": "https://images.unsplash.com/photo-1626071420790-2da8b75c87a5?auto=format&fit=crop&q=80&w=400",
-  "Arunachal Pradesh": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&q=80&w=400",
+  "Arunachal Pradesh": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=400",
   "Assam": "https://images.unsplash.com/photo-1594639233454-07d042968ec9?auto=format&fit=crop&q=80&w=400",
   "Bihar": "https://images.unsplash.com/photo-1517330357046-3ab5a5dd42b1?auto=format&fit=crop&q=80&w=400",
   "Chhattisgarh": "https://images.unsplash.com/photo-1623053524316-37c8ef9ec98f?auto=format&fit=crop&q=80&w=400",
