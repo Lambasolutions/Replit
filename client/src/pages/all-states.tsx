@@ -27,7 +27,7 @@ export default function AllStates() {
       </Helmet>
       <Header />
       
-      <section className="relative min-h-[60vh] md:min-h-[85vh] flex items-center justify-center text-white overflow-hidden bg-gray-900">
+      <section className="relative min-h-[400px] md:min-h-[85vh] flex items-center justify-center text-white overflow-hidden bg-gray-900">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
           src={heroImage} 
