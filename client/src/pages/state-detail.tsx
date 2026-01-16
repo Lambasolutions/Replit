@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 
 // This is a simplified sample map for the testing phase
-const stateInfo: Record<string, { image: string, description: string }> = {
+const stateInfo: Record<string, { image: string, description: string, services: string[] }> = {
   "Andhra-Pradesh": {
     image: "https://images.unsplash.com/photo-1626071420790-2da8b75c87a5?auto=format&fit=crop&q=80&w=1200",
     description: "Comprehensive citizen and business services for the state of Andhra Pradesh.",
@@ -24,7 +24,8 @@ const stateInfo: Record<string, { image: string, description: string }> = {
   },
   "Delhi": {
     image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80&w=1200",
-    description: "Premium government and corporate services in the National Capital Territory of Delhi."
+    description: "Premium government and corporate services in the National Capital Territory of Delhi.",
+    services: ["Company Registration", "Tax Compliance", "Legal Documentation", "Financial Advisory"]
   }
 };
 
