@@ -21,7 +21,7 @@ const states = [
 // Mapping of state names to representative images
 const stateImages: Record<string, string> = {
   "Andhra Pradesh": "https://images.unsplash.com/photo-1626071420790-2da8b75c87a5?auto=format&fit=crop&q=80&w=400",
-  "Arunachal Pradesh": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&q=80&w=400",
+  "Arunachal Pradesh": "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&q=80&w=400",
   "Assam": "https://images.unsplash.com/photo-1594639233454-07d042968ec9?auto=format&fit=crop&q=80&w=400",
   "Bihar": "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&q=80&w=400",
   "Chhattisgarh": "https://images.unsplash.com/photo-1623053524316-37c8ef9ec98f?auto=format&fit=crop&q=80&w=400",
@@ -30,7 +30,7 @@ const stateImages: Record<string, string> = {
   "Haryana": "https://images.unsplash.com/photo-1595231712325-9fdec20aa197?auto=format&fit=crop&q=80&w=400",
   "Himachal Pradesh": "https://images.unsplash.com/photo-1581005898864-4e78a635848f?auto=format&fit=crop&q=80&w=400",
   "Jharkhand": "https://images.unsplash.com/photo-1620050854426-3685c2901962?auto=format&fit=crop&q=80&w=400",
-  "Karnataka": "https://images.unsplash.com/photo-1590733431244-46761946a13b?auto=format&fit=crop&q=80&w=400",
+  "Karnataka": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&q=80&w=400",
   "Kerala": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&q=80&w=400",
   "Madhya Pradesh": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&q=80&w=400",
   "Maharashtra": "https://images.unsplash.com/photo-1562158074-21143899451a?auto=format&fit=crop&q=80&w=400",
