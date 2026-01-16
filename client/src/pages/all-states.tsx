@@ -18,6 +18,28 @@ const states = [
   "Delhi", "Jammu and Kashmir", "Ladakh", "Lakshadweep", "Puducherry"
 ];
 
+// Mapping of state names to representative images
+const stateImages: Record<string, string> = {
+  "Andhra Pradesh": "https://images.unsplash.com/photo-1626071420790-2da8b75c87a5?auto=format&fit=crop&q=80&w=400",
+  "Arunachal Pradesh": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&q=80&w=400",
+  "Assam": "https://images.unsplash.com/photo-1594639233454-07d042968ec9?auto=format&fit=crop&q=80&w=400",
+  "Bihar": "https://images.unsplash.com/photo-1517330357046-3ab5a5dd42b1?auto=format&fit=crop&q=80&w=400",
+  "Chhattisgarh": "https://images.unsplash.com/photo-1623053524316-37c8ef9ec98f?auto=format&fit=crop&q=80&w=400",
+  "Goa": "https://images.unsplash.com/photo-1512789146564-8bd59273150a?auto=format&fit=crop&q=80&w=400",
+  "Gujarat": "https://images.unsplash.com/photo-1599933023673-c2423ef217aa?auto=format&fit=crop&q=80&w=400",
+  "Haryana": "https://images.unsplash.com/photo-1588691880434-62402176466f?auto=format&fit=crop&q=80&w=400",
+  "Himachal Pradesh": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=400",
+  "Jharkhand": "https://images.unsplash.com/photo-1601618284698-b80c102a9b36?auto=format&fit=crop&q=80&w=400",
+  "Karnataka": "https://images.unsplash.com/photo-1600100397608-f09074063248?auto=format&fit=crop&q=80&w=400",
+  "Kerala": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&q=80&w=400",
+  "Madhya Pradesh": "https://images.unsplash.com/photo-1589552140411-96853232159f?auto=format&fit=crop&q=80&w=400",
+  "Maharashtra": "https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&q=80&w=400",
+  "Delhi": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80&w=400",
+  "Telangana": "https://images.unsplash.com/photo-1602143354857-490327f2f277?auto=format&fit=crop&q=80&w=400",
+  "Tamil Nadu": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&q=80&w=400",
+  "West Bengal": "https://images.unsplash.com/photo-1558431382-27e39cbef4bc?auto=format&fit=crop&q=80&w=400",
+};
+
 export default function AllStates() {
   return (
     <div className="min-h-screen bg-white">
@@ -52,12 +74,20 @@ export default function AllStates() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {states.map((state, index) => (
-              <Card key={index} className="shadow-md hover:shadow-xl transition duration-300 border-t-4 border-blue-600 group">
+              <Card key={index} className="shadow-md hover:shadow-xl transition duration-300 border-t-4 border-blue-600 group overflow-hidden">
+                <div className="h-40 overflow-hidden relative">
+                  <img 
+                    src={stateImages[state] || "https://images.unsplash.com/photo-1532375811408-1699075822cc?auto=format&fit=crop&q=80&w=400"} 
+                    alt={state}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <h3 className="absolute bottom-4 left-4 text-xl font-bold text-white drop-shadow-lg">{state}</h3>
+                </div>
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{state}</h3>
-                  <p className="text-sm text-gray-500 mt-2">Available Services</p>
+                  <p className="text-sm text-gray-500 mb-4">Available Services</p>
                   <Link href={`/services/all-states/${state.split(" ").join("-")}`}>
-                    <Button variant="outline" className="w-full mt-4 border-blue-600 text-blue-700 hover:bg-blue-50">
+                    <Button variant="outline" className="w-full border-blue-600 text-blue-700 hover:bg-blue-50">
                       View Services
                     </Button>
                   </Link>
