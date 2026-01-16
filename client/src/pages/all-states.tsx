@@ -56,9 +56,11 @@ export default function AllStates() {
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{state}</h3>
                   <p className="text-sm text-gray-500 mt-2">Available Services</p>
-                  <Button variant="outline" className="w-full mt-4 border-blue-600 text-blue-700 hover:bg-blue-50">
-                    View Services
-                  </Button>
+                  <Link href={`/services/all-states/${state.split(" ").join("-")}`}>
+                    <Button variant="outline" className="w-full mt-4 border-blue-600 text-blue-700 hover:bg-blue-50">
+                      View Services
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
