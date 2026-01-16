@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import heroImage from "@assets/generated_images/all_state_services_hero_image.png";
+import generatedHero from "@assets/generated_images/wide-angle_landscape_of_indian_parliament_building.png";
 
 const states = [
   "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
@@ -30,9 +30,9 @@ export default function AllStates() {
       <section className="relative min-h-[400px] md:min-h-[85vh] flex items-center justify-center text-white overflow-hidden bg-gray-900">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
-          src={heroImage} 
-          alt="Indian government and state services" 
-          className="absolute inset-0 w-full h-full object-cover object-top z-0"
+          src={generatedHero} 
+          alt="Indian Parliament" 
+          className="absolute inset-0 w-full h-full object-cover object-center z-0"
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Link href="/services">
