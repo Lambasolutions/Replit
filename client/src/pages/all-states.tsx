@@ -20,38 +20,38 @@ const states = [
 
 // Mapping of state names to representative images
 const stateImages: Record<string, string> = {
-  "Andhra Pradesh": "https://images.unsplash.com/photo-1626071420790-2da8b75c87a5?auto=format&fit=crop&q=80&w=400",
-  "Arunachal Pradesh": "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&q=80&w=400",
-  "Assam": "https://images.unsplash.com/photo-1594639233454-07d042968ec9?auto=format&fit=crop&q=80&w=400",
-  "Bihar": "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&q=80&w=400",
-  "Chhattisgarh": "https://images.unsplash.com/photo-1623053524316-37c8ef9ec98f?auto=format&fit=crop&q=80&w=400",
-  "Goa": "https://images.unsplash.com/photo-1512789146564-8bd59273150a?auto=format&fit=crop&q=80&w=400",
-  "Gujarat": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&q=80&w=400",
-  "Haryana": "https://images.unsplash.com/photo-1595231712325-9fdec20aa197?auto=format&fit=crop&q=80&w=400",
-  "Himachal Pradesh": "https://images.unsplash.com/photo-1581005898864-4e78a635848f?auto=format&fit=crop&q=80&w=400",
-  "Jharkhand": "https://images.unsplash.com/photo-1620050854426-3685c2901962?auto=format&fit=crop&q=80&w=400",
-  "Karnataka": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&q=80&w=400",
-  "Kerala": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&q=80&w=400",
-  "Madhya Pradesh": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&q=80&w=400",
-  "Maharashtra": "https://images.unsplash.com/photo-1562158074-21143899451a?auto=format&fit=crop&q=80&w=400",
-  "Manipur": "https://images.unsplash.com/photo-1610408542911-37d38398b187?auto=format&fit=crop&q=80&w=400",
-  "Meghalaya": "https://images.unsplash.com/photo-1515514210620-df7036499878?auto=format&fit=crop&q=80&w=400",
-  "Mizoram": "https://images.unsplash.com/photo-1610408542911-37d38398b187?auto=format&fit=crop&q=80&w=400",
-  "Nagaland": "https://images.unsplash.com/photo-1610408542911-37d38398b187?auto=format&fit=crop&q=80&w=400",
-  "Odisha": "https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=400",
-  "Punjab": "https://images.unsplash.com/photo-1588096344316-f702346b31a1?auto=format&fit=crop&q=80&w=400",
-  "Rajasthan": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=400",
-  "Sikkim": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&q=80&w=400",
-  "Tamil Nadu": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&q=80&w=400",
-  "Telangana": "https://images.unsplash.com/photo-1602143354857-490327f2f277?auto=format&fit=crop&q=80&w=400",
-  "Tripura": "https://images.unsplash.com/photo-1610408542911-37d38398b187?auto=format&fit=crop&q=80&w=400",
-  "Uttar Pradesh": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=400",
-  "Uttarakhand": "https://images.unsplash.com/photo-1584502833334-92ef2741969e?auto=format&fit=crop&q=80&w=400",
-  "West Bengal": "https://images.unsplash.com/photo-1558431382-27e39cbef4bc?auto=format&fit=crop&q=80&w=400",
-  "Delhi": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80&w=400",
-  "Jammu and Kashmir": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&q=80&w=400",
-  "Ladakh": "https://images.unsplash.com/photo-1614093851021-4d7629fc305e?auto=format&fit=crop&q=80&w=400",
-  "Puducherry": "https://images.unsplash.com/photo-1589793907316-f94025b46850?auto=format&fit=crop&q=80&w=400",
+  "Andhra Pradesh": "https://images.unsplash.com/photo-1626071420790-2da8b75c87a5?auto=format&fit=crop&q=80&w=200",
+  "Arunachal Pradesh": "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&q=80&w=200",
+  "Assam": "https://images.unsplash.com/photo-1594639233454-07d042968ec9?auto=format&fit=crop&q=80&w=200",
+  "Bihar": "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&q=80&w=200",
+  "Chhattisgarh": "https://images.unsplash.com/photo-1623053524316-37c8ef9ec98f?auto=format&fit=crop&q=80&w=200",
+  "Goa": "https://images.unsplash.com/photo-1512789146564-8bd59273150a?auto=format&fit=crop&q=80&w=200",
+  "Gujarat": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&q=80&w=200",
+  "Haryana": "https://images.unsplash.com/photo-1595231712325-9fdec20aa197?auto=format&fit=crop&q=80&w=200",
+  "Himachal Pradesh": "https://images.unsplash.com/photo-1581005898864-4e78a635848f?auto=format&fit=crop&q=80&w=200",
+  "Jharkhand": "https://images.unsplash.com/photo-1620050854426-3685c2901962?auto=format&fit=crop&q=80&w=200",
+  "Karnataka": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&q=80&w=200",
+  "Kerala": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&q=80&w=200",
+  "Madhya Pradesh": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&q=80&w=200",
+  "Maharashtra": "https://images.unsplash.com/photo-1562158074-21143899451a?auto=format&fit=crop&q=80&w=200",
+  "Manipur": "https://images.unsplash.com/photo-1610408542911-37d38398b187?auto=format&fit=crop&q=80&w=200",
+  "Meghalaya": "https://images.unsplash.com/photo-1515514210620-df7036499878?auto=format&fit=crop&q=80&w=200",
+  "Mizoram": "https://images.unsplash.com/photo-1610408542911-37d38398b187?auto=format&fit=crop&q=80&w=200",
+  "Nagaland": "https://images.unsplash.com/photo-1610408542911-37d38398b187?auto=format&fit=crop&q=80&w=200",
+  "Odisha": "https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=200",
+  "Punjab": "https://images.unsplash.com/photo-1588096344316-f702346b31a1?auto=format&fit=crop&q=80&w=200",
+  "Rajasthan": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=200",
+  "Sikkim": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&q=80&w=200",
+  "Tamil Nadu": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&q=80&w=200",
+  "Telangana": "https://images.unsplash.com/photo-1602143354857-490327f2f277?auto=format&fit=crop&q=80&w=200",
+  "Tripura": "https://images.unsplash.com/photo-1610408542911-37d38398b187?auto=format&fit=crop&q=80&w=200",
+  "Uttar Pradesh": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=200",
+  "Uttarakhand": "https://images.unsplash.com/photo-1584502833334-92ef2741969e?auto=format&fit=crop&q=80&w=200",
+  "West Bengal": "https://images.unsplash.com/photo-1558431382-27e39cbef4bc?auto=format&fit=crop&q=80&w=200",
+  "Delhi": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80&w=200",
+  "Jammu and Kashmir": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&q=80&w=200",
+  "Ladakh": "https://images.unsplash.com/photo-1614093851021-4d7629fc305e?auto=format&fit=crop&q=80&w=200",
+  "Puducherry": "https://images.unsplash.com/photo-1589793907316-f94025b46850?auto=format&fit=crop&q=80&w=200",
 };
 
 export default function AllStates() {
@@ -92,14 +92,14 @@ export default function AllStates() {
               <Card key={index} className="shadow-md hover:shadow-xl transition duration-300 border-t-4 border-blue-600 group overflow-hidden">
                 <div className="h-40 overflow-hidden relative bg-gray-200">
                   <img 
-                    src={stateImages[state] || "https://images.unsplash.com/photo-1532375811408-1699075822cc?auto=format&fit=crop&q=80&w=400"} 
+                    src={stateImages[state] || "https://images.unsplash.com/photo-1532375811408-1699075822cc?auto=format&fit=crop&q=80&w=200"} 
                     alt={state}
                     key={state}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    loading="eager"
+                    loading="lazy"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = "https://images.unsplash.com/photo-1532375811408-1699075822cc?auto=format&fit=crop&q=80&w=400";
+                      target.src = "https://images.unsplash.com/photo-1532375811408-1699075822cc?auto=format&fit=crop&q=80&w=200";
                       target.onerror = null;
                     }}
                   />
