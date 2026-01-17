@@ -15,7 +15,8 @@ export default function TaxCompliance() {
     { name: "Company Compliance", description: "ROC filings, board meetings, and statutory records maintenance." },
     { name: "Partnership Compliance", description: "Annual filings and regulatory requirements for partnership firms." },
     { name: "FSSAI Registration", description: "Food safety license and registration for food-related business entities." },
-    { name: "Business Licensing", description: "Assistance with various industry-specific trade licenses and renewals." }
+    { name: "Business Licensing", description: "Assistance with various industry-specific trade licenses and renewals." },
+    { name: "Tax & Business Advisory", description: "Strategic tax planning and business advisory services for sustainable growth." }
   ];
 
   return (
