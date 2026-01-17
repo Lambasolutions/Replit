@@ -25,7 +25,7 @@ export default function CompanyRegistration() {
       </Helmet>
       <Header />
       
-      <section className="py-12 bg-gradient-to-r from-blue-600 to-blue-400 text-white overflow-hidden">
+      <section className="py-8 bg-gradient-to-r from-blue-600 to-blue-400 text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/services">
             <button className="text-white hover:text-gray-200 mb-4 flex items-center">
@@ -34,8 +34,8 @@ export default function CompanyRegistration() {
           </Link>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">Company Registration</h1>
-              <p className="text-xl md:text-2xl mb-8">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">Company Registration</h1>
+              <p className="text-lg md:text-xl mb-6">
                 Comprehensive business registration services for all types of corporate structures.
               </p>
             </div>
@@ -43,7 +43,7 @@ export default function CompanyRegistration() {
               <img 
                 src={heroImage}
                 alt="Company Registration"
-                className="rounded-2xl shadow-2xl border-4 border-white/20 w-full h-auto max-h-[300px] lg:max-h-[400px] object-cover mt-8 lg:mt-0"
+                className="rounded-2xl shadow-2xl border-4 border-white/20 w-full h-auto max-h-[250px] lg:max-h-[300px] object-cover mt-8 lg:mt-0"
               />
             </div>
           </div>
