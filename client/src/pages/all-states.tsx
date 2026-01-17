@@ -63,12 +63,13 @@ export default function AllStates() {
       </Helmet>
       <Header />
       
-      <section className="relative min-h-[400px] md:min-h-[85vh] flex items-center justify-center text-white overflow-hidden bg-gray-900">
+      <section className="relative min-h-[50vh] md:min-h-[85vh] flex items-center justify-center text-white overflow-hidden bg-gray-900">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
           src={generatedHero} 
           alt="Indian Parliament" 
           className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          style={{ objectPosition: 'center 20%' }}
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Link href="/services">
