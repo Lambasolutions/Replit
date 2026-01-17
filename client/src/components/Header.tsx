@@ -150,6 +150,15 @@ export default function Header() {
                       Services
                     </button>
                   </Link>
+                  <div className="pl-4 flex flex-col space-y-2">
+                    {serviceCategories.map((service, index) => (
+                      <Link key={index} href={service.href}>
+                        <button className="text-gray-500 hover:text-primary px-3 py-1 rounded-md text-sm font-medium text-left w-full">
+                          • {service.name}
+                        </button>
+                      </Link>
+                    ))}
+                  </div>
                   <button
                     onClick={() => scrollToSection('about')}
                     className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-base font-medium text-left"
