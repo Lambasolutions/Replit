@@ -68,7 +68,7 @@ export default function AllStates() {
         <img 
           src={generatedHero} 
           alt="Indian Parliament" 
-          className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          className="absolute inset-0 w-full h-full object-cover z-0"
           style={{ objectPosition: 'center 20%' }}
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
