@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import servicesHero from "@assets/stock_images/professional-business-services-team-meeting-modern-office_1.png";
+import servicesHero from "@assets/stock_images/professional_busines_3a0dedc1.jpg";
 
 export default function Services() {
   const serviceCategories = [
