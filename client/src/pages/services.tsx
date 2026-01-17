@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import servicesHero from "@assets/stock_images/professional-business-services-team-meeting-modern-office_1.png";
 
 export default function Services() {
   const serviceCategories = [
@@ -116,12 +117,23 @@ export default function Services() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Comprehensive business solutions across multiple industries with expertise and reliability.
-          </p>
+      <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-center lg:text-left">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
+              <p className="text-xl md:text-2xl mb-8 max-w-3xl">
+                Comprehensive business solutions across multiple industries with expertise and reliability.
+              </p>
+            </div>
+            <div className="lg:block">
+              <img 
+                src={servicesHero} 
+                alt="Business Services" 
+                className="rounded-2xl shadow-2xl border-4 border-white/20 w-full h-auto max-h-[300px] lg:max-h-[400px] object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

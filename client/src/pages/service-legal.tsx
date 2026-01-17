@@ -17,7 +17,7 @@ export default function Legal() {
     <div className="min-h-screen bg-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-red-600 to-red-400 text-white">
+      <section className="py-12 bg-gradient-to-r from-red-600 to-red-400 text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/services">
             <button className="text-white hover:text-gray-200 mb-4 flex items-center">
@@ -35,7 +35,7 @@ export default function Legal() {
               <img 
                 src={heroImage}
                 alt="Legal Services"
-                className="rounded-2xl shadow-2xl border-4 border-white/20 w-full h-auto max-h-[300px] lg:max-h-none object-cover mt-8 lg:mt-0"
+                className="rounded-2xl shadow-2xl border-4 border-white/20 w-full h-auto max-h-[300px] lg:max-h-[400px] object-cover mt-8 lg:mt-0"
               />
             </div>
           </div>
