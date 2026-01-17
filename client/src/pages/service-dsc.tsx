@@ -31,11 +31,11 @@ export default function DSC() {
                 Secure digital signatures for online transactions and official documentation.
               </p>
             </div>
-            <div className="hidden lg:block">
+            <div className="lg:block">
               <img 
                 src={heroImage}
                 alt="Digital Signature Certificate"
-                className="rounded-2xl shadow-2xl border-4 border-white/20"
+                className="rounded-2xl shadow-2xl border-4 border-white/20 w-full h-auto max-h-[300px] lg:max-h-none object-cover mt-8 lg:mt-0"
               />
             </div>
           </div>

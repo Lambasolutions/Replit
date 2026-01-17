@@ -31,11 +31,11 @@ export default function Legal() {
                 Professional legal documentation and agreement services for your business.
               </p>
             </div>
-            <div className="hidden lg:block">
+            <div className="lg:block">
               <img 
                 src={heroImage}
                 alt="Legal Services"
-                className="rounded-2xl shadow-2xl border-4 border-white/20"
+                className="rounded-2xl shadow-2xl border-4 border-white/20 w-full h-auto max-h-[300px] lg:max-h-none object-cover mt-8 lg:mt-0"
               />
             </div>
           </div>

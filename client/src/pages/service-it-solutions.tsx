@@ -38,11 +38,11 @@ export default function ITSolutions() {
                 Empowering your business with cutting-edge technology and innovative digital solutions.
               </p>
             </div>
-            <div className="hidden lg:block">
+            <div className="lg:block">
               <img 
                 src={heroImage}
                 alt="IT Solutions"
-                className="rounded-2xl shadow-2xl border-4 border-white/20"
+                className="rounded-2xl shadow-2xl border-4 border-white/20 w-full h-auto max-h-[300px] lg:max-h-none object-cover mt-8 lg:mt-0"
               />
             </div>
           </div>

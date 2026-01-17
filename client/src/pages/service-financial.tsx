@@ -38,11 +38,11 @@ export default function Financial() {
                 Comprehensive financial solutions and lending options for individuals and businesses.
               </p>
             </div>
-            <div className="hidden lg:block">
+            <div className="lg:block">
               <img 
                 src={heroImage}
                 alt="Financial Services"
-                className="rounded-2xl shadow-2xl border-4 border-white/20"
+                className="rounded-2xl shadow-2xl border-4 border-white/20 w-full h-auto max-h-[300px] lg:max-h-none object-cover mt-8 lg:mt-0"
               />
             </div>
           </div>
