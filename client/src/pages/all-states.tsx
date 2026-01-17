@@ -63,7 +63,7 @@ export default function AllStates() {
       </Helmet>
       <Header />
       
-      <section className="relative min-h-[40vh] md:min-h-[85vh] flex items-center justify-center text-white overflow-hidden bg-gray-900">
+      <section className="relative min-h-[30vh] md:min-h-[40vh] flex items-center justify-center text-white overflow-hidden bg-gray-900 py-12">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
           src={generatedHero} 
@@ -73,13 +73,13 @@ export default function AllStates() {
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Link href="/services">
-            <Button variant="ghost" className="text-white hover:bg-white/20 mb-6 group">
+            <Button variant="ghost" className="text-white hover:bg-white/20 mb-4 group">
               <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
               Back to Services
             </Button>
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">All State Services</h1>
-          <p className="text-xl max-w-3xl mx-auto drop-shadow-md opacity-90">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">All State Services</h1>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md opacity-90">
             Dedicated support for citizen and business services across every state and union territory in India.
           </p>
         </div>
