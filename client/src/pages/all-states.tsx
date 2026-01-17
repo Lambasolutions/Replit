@@ -63,7 +63,7 @@ export default function AllStates() {
       </Helmet>
       <Header />
       
-      <section className="relative min-h-[50vh] md:min-h-[85vh] flex items-center justify-center text-white overflow-hidden bg-gray-900">
+      <section className="relative min-h-[40vh] md:min-h-[85vh] flex items-center justify-center text-white overflow-hidden bg-gray-900">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
           src={generatedHero} 
@@ -90,23 +90,19 @@ export default function AllStates() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {states.map((state, index) => (
               <Card key={index} className="shadow-md hover:shadow-xl transition duration-300 border-t-4 border-blue-600 group overflow-hidden">
-                <div className="h-40 overflow-hidden relative bg-gray-100">
-                  {stateImages[state] ? (
-                    <img 
-                      src={stateImages[state]} 
-                      alt={state}
-                      key={state}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = "https://images.unsplash.com/photo-1532375811408-1699075822cc?auto=format&fit=crop&q=80&w=400";
-                      }}
-                    />
-                  ) : (
-                    <div className="w-full h-full bg-blue-50 flex items-center justify-center">
-                      <span className="text-blue-200 font-bold text-4xl">{state.charAt(0)}</span>
-                    </div>
-                  )}
+                <div className="h-40 overflow-hidden relative bg-gray-200">
+                  <img 
+                    src={stateImages[state] || "https://images.unsplash.com/photo-1532375811408-1699075822cc?auto=format&fit=crop&q=80&w=400"} 
+                    alt={state}
+                    key={state}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="eager"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = "https://images.unsplash.com/photo-1532375811408-1699075822cc?auto=format&fit=crop&q=80&w=400";
+                      target.onerror = null;
+                    }}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <h3 className="absolute bottom-4 left-4 text-xl font-bold text-white drop-shadow-lg">{state}</h3>
                 </div>
