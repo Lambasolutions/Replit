@@ -46,22 +46,28 @@ export default function StateDetail() {
       </Helmet>
       <Header />
       
-      <section className="relative min-h-[30vh] md:min-h-[40vh] flex items-center justify-center text-white overflow-hidden bg-gray-900 py-12">
-        <div className="absolute inset-0 bg-black/50 z-10"></div>
-        <img 
-          src={info.image} 
-          alt={stateName} 
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        />
-        <div className="relative z-20 max-w-7xl mx-auto px-4 text-center">
+      <section className="py-8 bg-gradient-to-r from-primary to-secondary text-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/services/all-states">
-            <Button variant="ghost" className="text-white hover:bg-white/20 mb-4 group">
-              <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-              Back to All States
-            </Button>
+            <button className="text-white hover:text-gray-200 mb-4 flex items-center">
+              ← Back to All States
+            </button>
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-2xl">{stateName}</h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto drop-shadow-lg">{info.description}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-center lg:text-left">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">{stateName}</h1>
+              <p className="text-lg md:text-xl mb-6 max-w-3xl">
+                {info.description}
+              </p>
+            </div>
+            <div className="lg:block">
+              <img 
+                src={info.image} 
+                alt={stateName} 
+                className="rounded-2xl shadow-2xl border-4 border-white/20 w-full h-auto max-h-[250px] lg:max-h-[300px] object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
