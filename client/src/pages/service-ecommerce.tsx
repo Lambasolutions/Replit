@@ -24,11 +24,6 @@ export default function Ecommerce() {
       name: "Textiles", 
       description: "Khadi, handloom, and machine loom products",
       image: textileImage
-    },
-    { 
-      name: "Export Services", 
-      description: "International trade facilitation",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     }
   ];
 
